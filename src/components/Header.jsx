@@ -1,9 +1,11 @@
 import React from 'react';
 import '@styles/Header.scss';
+import logo from '@imagenes/cerebro.svg';
 
 const Header = () => {
     return (
         <div className='header'>
+            <img src={logo} />
             <nav className='header__contenedor'>
                 <div id="menu">
                     <ul>
