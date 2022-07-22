@@ -1,0 +1,72 @@
+@import './globals';
+@import './colors';
+
+.header {
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    right: -1025px;
+    padding: 10px;
+    //position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //flex-direction: column;
+    z-index: 10;
+    transition: 0.5s;
+    & .header__contenedor {
+        position: relative;
+        display: flex;
+        #menu {
+            width: 120px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 25px;
+            transition: 8s ease-in;
+            &:hover {}
+            ul {
+                list-style-type: none;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                & li {
+                    & button {
+                        width: 120px;
+                        height: 40px;
+                        border-radius: 10px;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header.is-active {
+    right: 0;
+    transition: .2s ease-in-out;
+    background-color: rgba( $color-dark-soft, .6);
+    // animation-name: rebote_lateral;
+    // animation-duration: 2.1s;
+    // animation-timing-function: ease-in-out;
+    @keyframes rebote_lateral {
+        0% {
+            transform: translateX(0);
+        }
+        40% {
+            transform: translateX(100px);
+        }
+        /* 60% {
+            transform: translateX(150px);
+        } */
+        80% {
+            transform: translateX(-10px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
