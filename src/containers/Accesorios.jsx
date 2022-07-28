@@ -1,5 +1,15 @@
 import React from 'react'
 import '@styles/Accesorios.scss'
+import brazalete from '@pictures/celulares/brazalete/1.png'
+import correa from '@pictures/celulares/correa/1.jpg'
+import fundaiphone from '@pictures/celulares/fundaiphone/1.jpg'
+import microfono from '@pictures/celulares/microfono/1.jpg'
+import sandisk16 from '@pictures/celulares/sandisk16/1.jpg'
+import soporte from '@pictures/celulares/soporte/1.jpg'
+import soporteMovil from '@pictures/celulares/soportemovil/1.jpg'
+import usbiphone from '@pictures/celulares/usbiphone/1.jpg'
+import inputtipoc from '@pictures/celulares/inputtipoc/1.jpg'
+import usbv from '@pictures/celulares/usbv/1.png'
 
 const Accesorios = () => {
     return (
@@ -8,51 +18,179 @@ const Accesorios = () => {
                 <h2>Celulares</h2>
                 <ul class="contenedor">
                     <li class="caja">
-                        <h3>Usb iPhone</h3>
-                        <img src="@accesorios/celulares/cableusbiphone/1.jpg" alt="" />                      
-                        <button onclick="iphone()">Ver</button>
+                        <h3>Brazalete</h3>
+                        <img src={brazalete} alt="" />
                     </li>
                     <li class="caja">
-                        <h3>Memoria SanDisk</h3>
-                        <img src="@accesorios/celulares/sandisk16/foto1.jpg" />
-                        <button onclick="iphone()">Ver</button>
+                        <h3>Correa reloj</h3>
+                        <img src={correa} alt="" />
                     </li>
                     <li class="caja">
-                        <h3>Usb carga rápida</h3>
-                        <img src="@accesorios/celulares/cableusb/1.png" />
-                        <button onclick="iphone()">Ver</button>
-                    </li>
-                    <li class="caja">
-                        <h3>Soporte estático para celulares</h3>
-                        <img src="@accesorios/celulares/soporte/1.jpg" />
-                        <button onclick="iphone()">Ver</button>
-                    </li>
-                    <li class="caja">
-                        <h3>Soporte móvil para celulares</h3>
-                        <img src="@accesorios/celulares/soporte movil/1.jpg" />
-                        <button
-                            onclick="iphone()">Ver</button>
-                    </li>
-                    <li class="caja">
-                        <h3>Correa reloj inteligente</h3>
-                        <img src="@accesorios/celulares/Correa/1.jpg" />
-                        <button
-                            onclick="iphone()">Ver</button>
-                    </li>
-                    <li class="caja">
-                        <h3>Vidrio Redmi Note 9</h3>
-                        <img src="assets/accesorios/celulares/vidrio/1.jpg" />
-                        <button onclick="iphone()">Ver</button>
+                        <h3>Funda iPhone</h3>
+                        <img src={fundaiphone} alt="" />
                     </li>
                     <li class="caja">
                         <h3>Micrófono</h3>
-                        <img src="assets/accesorios/celulares/Microfono/1.jpg" />
-                        <button onclick="iphone()">Ver</button>
+                        <img src={microfono} alt="" />
                     </li>
                     <li class="caja">
-                        <h3>Adaptador Usb - Tipo C</h3>
-                        <img src="assets/accesorios/celulares/usbtipoc/1.jpg" />
-                        <button onclick="iphone()">Ver</button>
+                        <h3>Memoria Sandisk</h3>
+                        <img src={sandisk16} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Soporte para celulares</h3>
+                        <img src={soporte} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Soporte ajustable</h3>
+                        <img src={soporteMovil} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>USB iPhone</h3>
+                        <img src={usbiphone} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Convertidor Tipo-C</h3>
+                        <img src={inputtipoc} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>USB Tipo-V</h3>
+                        <img src={usbv} alt="" />
+                    </li>
+                </ul>
+            </section>
+            <section class="accesorios-tipo">
+                <h2>Celulares</h2>
+                <ul class="contenedor">
+                    <li class="caja">
+                        <h3>Brazalete</h3>
+                        <img src={brazalete} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Correa reloj</h3>
+                        <img src={correa} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Funda iPhone</h3>
+                        <img src={fundaiphone} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Micrófono</h3>
+                        <img src={microfono} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Memoria Sandisk</h3>
+                        <img src={sandisk16} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Soporte para celulares</h3>
+                        <img src={soporte} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Soporte ajustable</h3>
+                        <img src={soporteMovil} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>USB iPhone</h3>
+                        <img src={usbiphone} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Convertidor Tipo-C</h3>
+                        <img src={inputtipoc} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>USB Tipo-V</h3>
+                        <img src={usbv} alt="" />
+                    </li>
+                </ul>
+            </section>
+            <section class="accesorios-tipo">
+                <h2>Celulares</h2>
+                <ul class="contenedor">
+                    <li class="caja">
+                        <h3>Brazalete</h3>
+                        <img src={brazalete} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Correa reloj</h3>
+                        <img src={correa} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Funda iPhone</h3>
+                        <img src={fundaiphone} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Micrófono</h3>
+                        <img src={microfono} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Memoria Sandisk</h3>
+                        <img src={sandisk16} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Soporte para celulares</h3>
+                        <img src={soporte} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Soporte ajustable</h3>
+                        <img src={soporteMovil} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>USB iPhone</h3>
+                        <img src={usbiphone} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Convertidor Tipo-C</h3>
+                        <img src={inputtipoc} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>USB Tipo-V</h3>
+                        <img src={usbv} alt="" />
+                    </li>
+                </ul>
+            </section>
+            <section class="accesorios-tipo">
+                <h2>Celulares</h2>
+                <ul class="contenedor">
+                    <li class="caja">
+                        <h3>Brazalete</h3>
+                        <img src={brazalete} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Correa reloj</h3>
+                        <img src={correa} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Funda iPhone</h3>
+                        <img src={fundaiphone} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Micrófono</h3>
+                        <img src={microfono} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Memoria Sandisk</h3>
+                        <img src={sandisk16} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Soporte para celulares</h3>
+                        <img src={soporte} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Soporte ajustable</h3>
+                        <img src={soporteMovil} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>USB iPhone</h3>
+                        <img src={usbiphone} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>Convertidor Tipo-C</h3>
+                        <img src={inputtipoc} alt="" />
+                    </li>
+                    <li class="caja">
+                        <h3>USB Tipo-V</h3>
+                        <img src={usbv} alt="" />
                     </li>
                 </ul>
             </section>

@@ -6,7 +6,13 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
+        /*
+            Se coloca el hash para forzar a los clientes
+            a utilizar the new version of the empaquetado
+            en lugar de usar el browser en su memoria.
+            Para eso se usa este hash.
+        */
+        filename: 'bundle.[hash].js',
         publicPath: '/',
     },
     mode: 'development',
@@ -18,10 +24,11 @@ module.exports = {
             '@pages': path.resolve(__dirname, 'src/pages/'),
             '@routes': path.resolve(__dirname, 'src/routes/'),
             '@styles': path.resolve(__dirname, 'src/styles/'),
-            '@accesorios': path.resolve(__dirname, 'src/assets/pictures/'),
-            '@imagenes': path.resolve(__dirname, 'src/assets/img/')
+            '@pictures': path.resolve(__dirname, 'src/assets/pictures/'),
+            '@img': path.resolve(__dirname, 'src/assets/img/')
         }
     },
+    //el module encierra a los loaders
     module: {
         rules: [
             {
@@ -48,7 +55,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|ico|svg|jpg|gif|jpeg)/,
+                test: /\.(png|ico|svg|jpg|gif|jpeg)$/,
                 type: 'asset'
             }
         ]

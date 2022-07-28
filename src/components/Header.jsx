@@ -1,6 +1,6 @@
 import React from 'react';
 import '@styles/Header.scss';
-import logo from '@imagenes/cerebro.svg';
+import logo from '@img/cerebro.svg';
 
 const Header = () => {
     return (
@@ -13,7 +13,7 @@ const Header = () => {
                             <button onClick={''}>Tienda</button>
                         </li>
                     </ul>
-                </div>
+                </div>                
                 <div id="menu">
                     <ul>
                         <li>
