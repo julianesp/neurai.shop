@@ -5,7 +5,7 @@ const Profile = () => {
     return (
         <section class="dev">
             <section class="img">
-                <img src="../assets/img/developer.jpg" alt="Desarrollador del sitio" />
+                <img src="@img/developer.jpg" alt="Desarrollador del sitio" />
             </section>
 
             <section class="description">
@@ -19,13 +19,13 @@ const Profile = () => {
             <section class="portfolio">
                 <h3>Mis proyectos</h3>
                 <div class="empresa">
-                    <img src="../assets/img/empresas/logo-ico.png" alt="Logo CIRP" />
+                    <img src="@img/empresas/logo-ico.png" alt="Logo CIRP" />
                     <button onclick="cirp()">
                         Visitar Cirp
                     </button>
                 </div>
                 <div class="empresa">
-                    <img src="../assets/img/empresas/awaspa.png" alt="Logo Awaspa" />
+                    <img src="@img/empresas/awaspa.png" alt="Logo Awaspa" />
                     <button onclick="awaspa()">
                         Visitar Awaspa
                     </button>
