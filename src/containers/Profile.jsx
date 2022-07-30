@@ -1,11 +1,14 @@
 import React from 'react';
 import '@styles/Profile.scss'
+import dev from "@img/developer.jpg"
+import cirp from "@img/empresas/cirp.png"
+import awaspa from "@img/empresas/awaspa.png"
 
 const Profile = () => {
     return (
         <section class="dev">
             <section class="img">
-                <img src="@img/developer.jpg" alt="Desarrollador del sitio" />
+                <img src={dev} alt="Desarrollador del sitio" />
             </section>
 
             <section class="description">
@@ -19,13 +22,13 @@ const Profile = () => {
             <section class="portfolio">
                 <h3>Mis proyectos</h3>
                 <div class="empresa">
-                    <img src="@img/empresas/logo-ico.png" alt="Logo CIRP" />
+                    <img src={cirp} alt="Logo CIRP" />
                     <button onclick="cirp()">
                         Visitar Cirp
                     </button>
                 </div>
                 <div class="empresa">
-                    <img src="@img/empresas/awaspa.png" alt="Logo Awaspa" />
+                    <img src={awaspa} alt="Logo Awaspa" />
                     <button onclick="awaspa()">
                         Visitar Awaspa
                     </button>

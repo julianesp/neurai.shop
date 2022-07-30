@@ -1,6 +1,8 @@
 import React from 'react';
 import '@styles/Header.scss';
 import logo from '@img/cerebro.svg';
+import pages from '../js/pages'
+
 
 const Header = () => {
     return (
