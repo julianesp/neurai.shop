@@ -1,0 +1,11 @@
+.main {
+    display: grid;
+    grid-template-columns: 80% 15%;
+    & .accesorios {
+        padding: 0 30px;
+        margin: 0;        
+    }
+    & .publicidad {
+        border: 5px solid #000;
+    }
+}

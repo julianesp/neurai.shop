@@ -2,7 +2,7 @@ import React from 'react';
 import '@styles/Header.scss';
 import logo from '@img/cerebro.svg';
 import pages from '../js/pages'
-
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
@@ -12,14 +12,14 @@ const Header = () => {
                 <div id="menu">
                     <ul>
                         <li>
-                            <button onClick={''}>Tienda</button>
+                            <NavLink to='/' >Inicio</NavLink>
                         </li>
                     </ul>
-                </div>                
+                </div>
                 <div id="menu">
                     <ul>
                         <li>
-                            <button onClick={''}>Mi perfil</button>
+                        <NavLink to='/profile'>Mi perfil</NavLink>
                         </li>
                     </ul>
                 </div>
@@ -27,13 +27,6 @@ const Header = () => {
                     <ul>
                         <li>
                             <button onClick={''}>Registro</button>
-                        </li>
-                    </ul>
-                </div>
-                <div id="menu">
-                    <ul>
-                        <li>
-                            <button onClick={''}>Tiendas</button>
                         </li>
                     </ul>
                 </div>
