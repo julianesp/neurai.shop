@@ -8,6 +8,7 @@ import NotFound from '../pages/NotFound'
 import Profile from '../containers/Profile'
 import Footer from '../containers/Footer'
 import Navegacion from '../components/Navegacion'
+import Anuncios from '../components/Anuncios'
 
 const App = () => {
     return (

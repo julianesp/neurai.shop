@@ -1,0 +1,15 @@
+.borde-right {
+  border: 1px double #baba;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #baba;
+}
+.borde-left {
+  border: 1px double #baba;
+  border-radius: 10px;
+  box-shadow: -10px 10px 10px #baba;
+}
+
+.sombra {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}

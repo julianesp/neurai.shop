@@ -8,6 +8,7 @@ const Header = () => {
     return (
         <div className='header'>
             <img src={logo} />
+            <h1>Neurai</h1>
             <nav className='header__contenedor'>
                 <div id="menu">
                     <ul>

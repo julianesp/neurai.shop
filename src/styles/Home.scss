@@ -1,11 +1,27 @@
+@import './heredar';
+
 .main {
     display: grid;
-    grid-template-columns: 80% 15%;
-    & .accesorios {
+    grid-template-columns: 80% 20%;
+    gap: 10px;
+    margin: 20px 50px;
+    & .accesorio {
         padding: 0 30px;
         margin: 0;        
+        @extend .borde-left;
     }
-    & .publicidad {
-        border: 5px solid #000;
+    & .anuncios {
+        display: flex;
+        & .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            & .contenido {
+                @extend .borde-right;                
+                height: 350px;
+                padding: 10px;
+            }
+        }
     }
 }
