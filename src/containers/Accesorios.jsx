@@ -10,6 +10,7 @@ import soporteMovil from '@pictures/celulares/soportemovil/1.jpg'
 import usbiphone from '@pictures/celulares/usbiphone/1.jpg'
 import inputtipoc from '@pictures/celulares/inputtipoc/1.jpg'
 import usbv from '@pictures/celulares/usbv/1.png'
+import fun from '../js/viewProducts'
 
 const Accesorios = () => {
     return (
@@ -20,6 +21,7 @@ const Accesorios = () => {
                     <li class="caja">
                         <h3>Brazalete</h3>
                         <img src={brazalete} alt="" />
+                        <button>Ver</button>
                     </li>
                     <li class="caja">
                         <h3>Correa reloj</h3>

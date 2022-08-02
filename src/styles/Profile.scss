@@ -1,21 +1,39 @@
 @import './colors';
 
 .dev {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-items: center;
     align-items: center;
     background-color: $color-fondo-soft;
-    padding: 20px 0;
-    & .img {
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    height: 350px;
+    & .img {        
+        transition: all 2s ease-in;
+        &:hover > img {
+            animation-name: expandir;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-delay: .3s;
+        }
         & img {
-            width: 200px;
+            width: 250px;
+            height: 250px;
             border-radius: 5px;
         }
     }
     & .description {
+        padding: 0 100px;
         animation-name: aparecer;
-        animation-duration: 2s;
+        animation-duration: 2.5s;
+
+        
         & h2 {
             font-size: 2em;
             color: #000;
@@ -35,21 +53,53 @@
     }
     @keyframes aparecer {
         0% {
+            transform: scale(.5);
+            transition: all 2s ease-out;
+
             opacity: 0;
         }
         100% {
+            transform: scale(1);
+            transition: all 2s ease-out;
+
             opacity: 1;
         }
     }
-    & .portfolio {
+    @keyframes expandir {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.5);
+        }
+    }
+}
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    & .empresa-container {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        
         & .empresa {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid $color-shadow;
+            border-radius: 10px;
+            margin: 0 25px;
+            padding: 25px;
+            width: 100px;
+
             & img {
                 width: 50px;
+                padding-bottom: 20px;
             }
         }
     }
+
 }
