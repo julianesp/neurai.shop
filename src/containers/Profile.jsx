@@ -3,6 +3,7 @@ import '@styles/Profile.scss'
 import dev from "@img/developer.jpg"
 import cirp from "@img/empresas/cirp.png"
 import awaspa from "@img/empresas/awaspa.png"
+const urlc = 'https://julianesp.github.io/cirp/'
 
 const Profile = () => {
     return (
@@ -29,15 +30,17 @@ const Profile = () => {
                 <div className="empresa-container">
                     <div class="empresa">
                         <img src={cirp} alt="Logo CIRP" />
-                        <button onclick="cirp()">
+                        <a href="https://julianesp.github.io/cirp/" target={'_blank'}>Visitar CIRP</a>
+                        {/* <button onclick={urlc}>
                             Visitar Cirp
-                        </button>
+                        </button> */}
                     </div>
                     <div class="empresa">
                         <img src={awaspa} alt="Logo Awaspa" />
-                        <button onclick="awaspa()">
+                        <a href="https://julianesp.github.io/awaspa/" target={'_blank'}>Visitar Awaspa</a>
+                        {/* <button onclick="awaspa()">
                             Visitar Awaspa
-                        </button>
+                        </button> */}
                     </div>
                 </div>
             </section>
