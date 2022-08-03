@@ -21,7 +21,7 @@ const Accesorios = () => {
                     <li class="caja">
                         <h3>Brazalete</h3>
                         <img src={brazalete} alt="" />
-                        <button>Ver</button>
+                        {/* <button onClick={verBrazalete}>Ver</button> */}
                     </li>
                     <li class="caja">
                         <h3>Correa reloj</h3>
