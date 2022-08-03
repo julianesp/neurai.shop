@@ -3,26 +3,25 @@
 @import './heredar';
 
 .header {
+    position: fixed;
+    @extend .flex-sbetween;
     top: 0;
-    bottom: 0;
-    // width: 100vw;
+    left: 0;
+    width: 99%;
     height: 40px;
-    right: -1025px;
     padding: 10px;    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10;
     transition: 0.5s;
     box-shadow: 1px 1px 15px rgba($color-botones, .8);
+    background-color: $color-claro;
+    z-index: 10;
 
     & img {
         width: 50px;
         height: 50px;
     }
     & .header__contenedor {
-        position: relative;
         display: flex;
+        justify-content: center;
         align-items: center;
         #menu {
             width: 120px;
