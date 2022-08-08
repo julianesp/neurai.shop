@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.borde-right {
+  border: 1px double rgba(187, 170, 187, 0.6666666667);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(187, 170, 187, 0.6666666667);
+}
+
+.borde-left {
+  border: 1px double rgba(187, 170, 187, 0.6666666667);
+  border-radius: 10px;
+  box-shadow: -10px 10px 10px rgba(187, 170, 187, 0.6666666667);
+}
+
+.flex-sbetween, .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 40px;
+  padding: 10px;
+  transition: 0.5s;
+  box-shadow: 1px 1px 15px rgba(4, 194, 255, 0.8);
+  background-color: #ffffff;
+  z-index: 10;
+}
+.header img {
+  width: 50px;
+  height: 50px;
+}
+.header .header__contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__contenedor #menu {
+  width: 120px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  transition: 8s ease-in;
+}
+.header .header__contenedor #menu ul {
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.header .header__contenedor #menu ul li button {
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+}
+
+.header.is-active {
+  right: 0;
+  transition: 0.2s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+@-webkit-keyframes rebote_lateral {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(100px);
+  }
+  /* 60% {
+      transform: translateX(150px);
+  } */
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes rebote_lateral {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(100px);
+  }
+  /* 60% {
+      transform: translateX(150px);
+  } */
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}/*# sourceMappingURL=Header.css.map */

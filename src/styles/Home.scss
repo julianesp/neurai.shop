@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 80% 20%;
     gap: 10px;
-    margin: 90px 50px;
+    margin: 90px 20px;
     & .accesorio {
         padding: 0 30px;
         margin: 0;        
@@ -23,6 +23,16 @@
                 height: 350px;
                 padding: 10px;
             }
+        }
+    }
+}
+
+@media screen and (max-width:420px) {
+    .main {
+        & .accesorio {
+            border: none;
+            box-shadow: none;
+            padding: 0;
         }
     }
 }

@@ -31,16 +31,10 @@ const Profile = () => {
                     <div class="empresa">
                         <img src={cirp} alt="Logo CIRP" />
                         <a href="https://julianesp.github.io/cirp/" target={'_blank'}>Visitar CIRP</a>
-                        {/* <button onclick={urlc}>
-                            Visitar Cirp
-                        </button> */}
                     </div>
                     <div class="empresa">
                         <img src={awaspa} alt="Logo Awaspa" />
                         <a href="https://julianesp.github.io/awaspa/" target={'_blank'}>Visitar Awaspa</a>
-                        {/* <button onclick="awaspa()">
-                            Visitar Awaspa
-                        </button> */}
                     </div>
                 </div>
             </section>
