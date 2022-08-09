@@ -50,6 +50,12 @@
         }
     }
 }
+@media screen and(max-width:768px) {
+    .header {
+        min-width: 320px;
+        max-width: 767px;
+    }
+}
 
 .header.is-active {
     right: 0;
@@ -76,3 +82,4 @@
         }
     }
 }
+
