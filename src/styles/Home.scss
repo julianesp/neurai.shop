@@ -27,8 +27,13 @@
     }
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width: 420px) {
     .main {
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+
+
         & .accesorio {
             border: none;
             box-shadow: none;
