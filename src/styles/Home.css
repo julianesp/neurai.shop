@@ -46,6 +46,13 @@
 }
 
 @media screen and (max-width: 420px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 320px;
+    max-width: 600px;
+  }
   .main .accesorio {
     border: none;
     box-shadow: none;

@@ -7,8 +7,10 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
     return (
         <div className='header'>
-            <img src={logo} />
-            <h1>Neurai</h1>
+            <div className="logo">
+                <img src={logo} />
+                <h1>Neurai</h1>
+            </div>
             <nav className='header__contenedor'>
                 <div id="menu">
                     <ul>
