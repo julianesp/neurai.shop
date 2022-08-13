@@ -3,6 +3,11 @@ import '@styles/Header.scss';
 import logo from '@img/cerebro.svg';
 import pages from '../js/pages'
 import { NavLink } from "react-router-dom";
+// llamando a libreria
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" />
+//calling file js to menu
+import '../js/menu';
+<script src="../js/menu.js" type='module'></script>
 
 const Header = () => {
     return (
@@ -11,7 +16,7 @@ const Header = () => {
                 <img src={logo} />
                 <h1>Neurai</h1>
             </div>
-            <nav className='header__contenedor'>
+            {/* <nav className='header__contenedor hamburger hamburger--elastic is-active" type="button'>
                 <div id="menu">
                     <ul>
                         <li>
@@ -22,7 +27,7 @@ const Header = () => {
                 <div id="menu">
                     <ul>
                         <li>
-                        <NavLink to='/profile'>Mi perfil</NavLink>
+                            <NavLink to='/profile'>Mi perfil</NavLink>
                         </li>
                     </ul>
                 </div>
@@ -33,7 +38,7 @@ const Header = () => {
                         </li>
                     </ul>
                 </div>
-            </nav>
+            </nav> */}
         </div>
     );
 };

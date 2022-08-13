@@ -32,9 +32,23 @@
     position: fixed;
 }
 
+html {
+    box-sizing: border-box;
+    //to transition soft
+    scroll-behavior: smooth;
+    width: 100vw;
+    min-width: 320px;
+}
+
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
+    //property to hide todo lo que se desborde en horizontal y ocultar
+    overflow-x: hidden;
+
+    & nav {
+        height: 100vh;
+    }
 }
 
 .burger-button {
@@ -45,11 +59,13 @@ body {
     line-height: 35px;
     border-radius: 50%;
     background-color: $color-botones;
+    border: 3px solid $color-claro;
     color: #fff;
     text-align: center;
     right: 0;
     z-index: 100;
-    top: 0px;
+    // top: 0px;
+    bottom: 0;
 }
 
 @media screen and (min-width: 768px){

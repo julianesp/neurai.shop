@@ -1,45 +1,52 @@
-@import './heredar';
+@import "./heredar";
 
 .main {
-    display: grid;
-    grid-template-columns: 80% 20%;
-    gap: 10px;
-    margin: 90px 20px;
-    & .accesorio {
-        padding: 0 30px;
-        margin: 0;        
-        @extend .borde-left;
-    }
-    & .anuncios {
-        display: flex;
-        & .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+  display: grid;
+//   grid-template-columns: 80% 20%;
+  grid-template-columns: repeat(auto-fill, min-max(320px, 1fr));
+  width: 100vw;
+  min-width: 320px;
+  gap: 10px;
+  margin: 90px 20px;
+  & .accesorio {
+    padding: 0 30px;
+    margin: 0;
+    width: 233px;
+    max-width: 400px;
+    @extend .borde-left;
+    // display: grid;      
+    // grid-template-columns: repeat(auto-fit, min-max(320px, 1fr));
+  }
+  & .anuncios {
+    display: flex;
+    & .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
-            & .contenido {
-                @extend .borde-right;
-                @extend .flex-center;           
-                height: 350px;
-                padding: 10px;
-            }
-        }
+      & .contenido {
+        @extend .borde-right;
+        @extend .flex-center;
+        height: 350px;
+        padding: 10px;
+      }
     }
+  }
 }
 
-@media screen and (max-width: 420px) {
-    .main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        //align-items: center;
-        min-width: 320px;
-        max-width: 600px;
+// @media screen and (max-width: 420px) {
+//   .main {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     //align-items: center;
+//     min-width: 320px;
+//     max-width: 600px;
 
-        & .accesorio {
-            border: none;
-            box-shadow: none;
-            padding: 0;
-        }
-    }
-}
+//     & .accesorio {
+//       border: none;
+//       box-shadow: none;
+//       padding: 0;
+//     }
+//   }
+// }
