@@ -78,7 +78,7 @@ body {
                 width: 150px;
                 height: 50px;
 
-                transition: .3s ease-in;
+                transition: .2s ease-in;
 
                 &:hover {
                     color: $color-claro;
@@ -88,7 +88,7 @@ body {
         }
 
         // para que el menú venga desde abajo
-        transform: translate(0, 100%);
+        transform: translate(0, 150%);
 
         &.is-active {
             transform: translate(0, 0);
