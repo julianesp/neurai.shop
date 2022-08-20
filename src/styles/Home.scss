@@ -2,8 +2,7 @@
 
 .main {
   display: grid;
-  // grid-template-columns: 75% 20%;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: 70% 25%;
   justify-content: space-between;
   
   min-width: 320px;
@@ -12,16 +11,19 @@
   
   & .accesorio {
     margin: 0;
+    padding-right: 10px;
     width: 100%;
-    border: 2px solid #000;
+    border: 1px solid #000;
+    
     // max-width: 400px;
     // @extend .borde-left;
     // display: grid;      
     // grid-template-columns: repeat(auto-fit, min-max(320px, 1fr));
   }
   & .anuncios {
-    width: 30%;
-    border: 2px solid #000;
+    width: 100%;
+    border: 1px solid #000;
+    
     
     & .container {
       @extend .flex-right;
@@ -35,6 +37,13 @@
         padding: 10px;
       }
     }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .main {
+    display: flex;
+    flex-direction: column;
   }
 }
 
