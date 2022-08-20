@@ -1,7 +1,7 @@
-.accesorios .accesorios-tipo h2 {
+.accesorios-tipo h2 {
   text-align: center;
 }
-.accesorios .accesorios-tipo .contenedor {
+.accesorios-tipo .contenedor {
   display: flex;
   overflow-x: scroll;
   padding: 0;
@@ -9,7 +9,7 @@
   position: relative;
   transition: 0.5s;
 }
-.accesorios .accesorios-tipo .contenedor .caja {
+.accesorios-tipo .contenedor .caja {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -28,12 +28,12 @@
   box-shadow: 10px 15px 10px 0 #bababa;
   transition: 0.6s;
 }
-.accesorios .accesorios-tipo .contenedor .caja h3 {
+.accesorios-tipo .contenedor .caja h3 {
   font-size: 1.1rem;
   margin: 0;
   top: 0;
 }
-.accesorios .accesorios-tipo .contenedor .caja img {
+.accesorios-tipo .contenedor .caja img {
   width: 150px;
   min-width: 150px;
   max-width: 250px;
@@ -41,7 +41,7 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-.accesorios .accesorios-tipo .contenedor .caja button {
+.accesorios-tipo .contenedor .caja button {
   width: 70px;
   height: 30px;
   background-color: rgb(67, 239, 46);
@@ -52,7 +52,7 @@
   font-size: 1.1rem;
   cursor: pointer;
 }
-.accesorios .accesorios-tipo .contenedor .caja button:hover {
+.accesorios-tipo .contenedor .caja button:hover {
   -webkit-animation-name: pulso;
           animation-name: pulso;
   -webkit-animation-duration: 0.7s;

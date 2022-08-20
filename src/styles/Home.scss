@@ -2,29 +2,31 @@
 
 .main {
   display: grid;
+  // grid-template-columns: 75% 20%;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  // grid-template-columns: repeat(auto-fill, min-max(320px, 1fr));
-  // width: 100vw;
+  justify-content: space-between;
+  
   min-width: 320px;
-  gap: 10px;
+  // gap: 10px;
   margin: 90px 20px;
+  
   & .accesorio {
-    padding: 0 30px;
     margin: 0;
-    // width: 233px;
+    width: 100%;
+    border: 2px solid #000;
     // max-width: 400px;
     // @extend .borde-left;
     // display: grid;      
     // grid-template-columns: repeat(auto-fit, min-max(320px, 1fr));
   }
   & .anuncios {
-    // display: flex;
-    // display: grid;
-    grid-template-columns: repeat(auto-fit, min-max(220px), 1fr);
+    width: 30%;
+    border: 2px solid #000;
+    
     & .container {
-      display: flex;
+      @extend .flex-right;
       flex-direction: column;
-      justify-content: space-between;
+      
 
       & .contenido {
         @extend .borde-right;
