@@ -46,9 +46,56 @@ body {
     //property to hide todo lo que se desborde en horizontal y ocultar
     overflow-x: hidden;
 
-    & nav {
-        height: 100vh;
+    & .nav {
+        position: fixed;
+        width: 100%;
+        padding: 0;
+        top: 0;
+        bottom: 0;
+
+        margin: 0;
+
+        z-index: 888;
+        background-color: $color-shadow;
+        @extend .flex-center;
+        flex-direction: column;
+
+        // se aplicará una transición al efecto transform 
+        transition: transform .5s ease-in;
+
+        & li {
+            list-style: none;
+            & button {
+                margin: 0;
+                margin-bottom: 10px;
+                padding: 0;
+                font-size: 1.3rem;
+                border: none;
+                border-radius: 10px;
+                color: $color-dark;
+                cursor: pointer;
+
+                width: 150px;
+                height: 50px;
+
+                transition: .3s ease-in;
+
+                &:hover {
+                    color: $color-claro;
+                    transform: scale(.95);
+                }
+            }
+        }
+
+        // para que el menú venga desde abajo
+        transform: translate(0, 100%);
+
+        &.is-active {
+            transform: translate(0, 0);
+        }
     }
+
+
 }
 
 .burger-button {
@@ -63,8 +110,8 @@ body {
     color: #fff;
     text-align: center;
     right: 0;
-    z-index: 100;
-    // top: 0px;
+    z-index: 999;
+    cursor: pointer;
     bottom: 0;
 }
 
