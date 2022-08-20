@@ -82,6 +82,8 @@ body {
 
                 &:hover {
                     color: $color-claro;
+                    background-color: $color-botones;
+                    border: 3px solid $color-claro;
                     transform: scale(.95);
                 }
             }
