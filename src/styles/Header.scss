@@ -16,7 +16,7 @@
   height: 40px;
   padding: 10px;
   transition: 0.5s;
-  box-shadow: 1px 1px 15px rgba($color-botones, 0.8);
+  border-bottom: 2px solid $color-shadow;
   background-color: $color-claro;
   z-index: 10;
 

@@ -1,16 +1,17 @@
 import React from 'react';
 import Header from '../components/Header';
+import styles from '@styles/Home.scss'
 import Acc from '../containers/Accesorios';
 import Anuncios from '../components/Anuncios';
-import styles from '@styles/Home.scss'
+import Publicidad from '../containers/Publicidad';
 
 const Home = () => {
     return (
-        <div className='main'>
-            <section className="accesorio">
+        <div className='main'>           
+
+            <section className='accesorio'>
+                <Publicidad />
                 <Acc />
-            </section>
-            <section className='anuncios'>
                 <Anuncios />
             </section>
         </div>

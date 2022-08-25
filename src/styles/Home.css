@@ -1,4 +1,4 @@
-.borde-right, .main .anuncios .container .contenido {
+.borde-right {
   border: 1px double rgba(187, 170, 187, 0.6666666667);
   border-radius: 10px;
   box-shadow: 10px 10px 10px rgba(187, 170, 187, 0.6666666667);
@@ -16,7 +16,7 @@
   align-items: center;
 }
 
-.flex-center, .main .anuncios .container .contenido {
+.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,20 +35,24 @@
 }
 
 .main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  justify-items: flex-end;
   min-width: 320px;
   margin: 90px 20px;
 }
 .main .accesorio {
-  padding: 0 30px;
-  margin: 0;
+  display: grid;
+  grid-template-areas: "imgNegocios imgNegocios imgNegocios" "accesorios accesorios accesorios" "publicidad publicidad publicidad";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding-right: 10px;
 }
-.main .anuncios .container {
-  width: 200px;
+.main .accesorio.imgNegocios {
+  grid-row-start: 1;
+  grid-row-end: 4;
 }
-.main .anuncios .container .contenido {
-  height: 350px;
-  padding: 10px;
+
+@media screen and (max-width: 720px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=Home.css.map */

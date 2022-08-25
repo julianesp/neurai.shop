@@ -1,5 +1,14 @@
-.accesorios-tipo h2 {
+.accesorios-tipo .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accesorios-tipo .title h2 {
   text-align: center;
+}
+.accesorios-tipo .title img {
+  width: 40px;
+  height: 30px;
 }
 .accesorios-tipo .contenedor {
   display: flex;

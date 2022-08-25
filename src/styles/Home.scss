@@ -1,41 +1,44 @@
 @import "./heredar";
 
 .main {
-  display: grid;
-  grid-template-columns: 70% 25%;
-  justify-content: space-between;
-  
   min-width: 320px;
-  // gap: 10px;
   margin: 90px 20px;
   
   & .accesorio {
-    margin: 0;
-    padding-right: 10px;
-    width: 100%;
-    
-    // max-width: 400px;
-    // @extend .borde-left;
-    // display: grid;      
-    // grid-template-columns: repeat(auto-fit, min-max(320px, 1fr));
-  }
-  & .anuncios {
-    width: 100%;
-    
-    
-    & .container {
-      @extend .flex-right;
-      flex-direction: column;
+    display: grid; 
+    grid-template-areas: 
+    'imgNegocios imgNegocios imgNegocios'
+    'accesorios accesorios accesorios'
+    'publicidad publicidad publicidad';
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr;
       
+    padding-right: 10px;
+    // border: 1px solid #000;
 
-      & .contenido {
-        @extend .borde-right;
-        @extend .flex-center;
-        height: 350px;
-        padding: 10px;
-      }
+    &.imgNegocios {
+      grid-row-start: 1;
+      grid-row-end: 4;
     }
   }
+
+  // & .anuncios {
+  //   width: 100%;
+    
+    
+  //   & .container {
+  //     @extend .flex-right;
+  //     flex-direction: column;
+      
+
+  //     & .contenido {
+  //       @extend .borde-right;
+  //       @extend .flex-center;
+  //       height: 350px;
+  //       padding: 10px;
+  //     }
+  //   }
+  // }
 }
 
 @media screen and (max-width: 720px) {
