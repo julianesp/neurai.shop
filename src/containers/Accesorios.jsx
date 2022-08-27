@@ -3,17 +3,13 @@ import '@styles/Accesorios.scss'
 
 //acceso directo a imagenes de celulares
 const cellphoneImages = require.context('@pictures/celulares/', true)
-const imgs = require.context('@pictures/', true)
 //acceso directo a imagenes de laptops
 // const laptopsImages = require.context('@pictures/laptops/', true)
 
 const Accesorios = () => {
     return (
         <section class="accesorios-tipo">
-            <div className="title">
-                <h2>Celulares</h2>
-                <img src={imgs(`./smartphone.png`)} alt="" />
-            </div>
+            <h2>Celulares</h2>
             <ul class="contenedor">
                 <li class="caja">
                     <h3>Brazalete</h3>

@@ -7,13 +7,10 @@ import Publicidad from '../containers/Publicidad';
 
 const Home = () => {
     return (
-        <div className='main'>           
-
-            <section className='accesorio'>
+        <div className='main'>            
                 <Publicidad />
                 <Acc />
-                <Anuncios />
-            </section>
+                <Anuncios />            
         </div>
     );
 };
