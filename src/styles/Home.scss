@@ -2,18 +2,18 @@
 
 .main {
   min-width: 320px;
-  margin: 90px 20px;
+  margin-top: 62px;
   
   & .accesorio {
     display: grid; 
-    grid-template-areas: 
-    'imgNegocios imgNegocios imgNegocios'
-    'accesorios accesorios accesorios'
-    'publicidad publicidad publicidad';
-    grid-template-columns: 1fr; 
-    grid-template-rows: 1fr 1fr 1fr;
+    // grid-template-areas: 
+    // 'imgNegocios imgNegocios imgNegocios'
+    // 'accesorios accesorios accesorios'
+    // 'publicidad publicidad publicidad';
+    // grid-template-columns: 1fr; 
+    // grid-template-rows: 1fr 1fr 1fr;
       
-    padding-right: 10px;
+    // padding-right: 10px;
     // border: 1px solid #000;
 
     &.imgNegocios {

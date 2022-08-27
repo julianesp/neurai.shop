@@ -1,5 +1,26 @@
+@import '@styles/colors';
+@import '@styles/heredar';
+
 .negocios {
-    border: 1px solid #000;
+    border-bottom: 1px solid $color-shadow;
     height: 330px;
     width: 100%;
+    margin-bottom: 50px;
+
+    & .negocios-contenedor {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+        height: inherit;
+        margin: 0;
+        padding: 0;
+
+        & li {
+            @extend .flex-center;
+            list-style: none;
+            height: inherit;
+            width: 400%;
+        }
+    }
 }
