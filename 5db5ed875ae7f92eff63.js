@@ -1,1 +1,0 @@
-function profile(i){location.href="../containers/Profile.jsx"}function inicio(i){location.href="../../public/index.html"}
