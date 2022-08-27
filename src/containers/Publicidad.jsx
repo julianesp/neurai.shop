@@ -1,12 +1,14 @@
 import React from 'react';
 import '@styles/Publicidad.scss'
 
+const imgs = require.context('@img/', true)
+
 const Publicidad = () => {
     return (
         <section className="negocios">
             <ul className='negocios-contenedor'>
-                <li>
-                    <button>anuncio1 atacar a cada botton</button>
+                <li>                    
+                    <img src={imgs(`developer.jpg`)} alt="" />                    
                 </li>
                 <li>
                     <button>anuncio2</button>
