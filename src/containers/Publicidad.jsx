@@ -8,19 +8,19 @@ const Publicidad = () => {
         <section className="negocios">
             <ul className='negocios-contenedor'>
                 <li>                    
-                    <img src={imgs(`developer.jpg`)} alt="" />                    
+                    <img src={imgs(`./developer.jpg`)} alt="" />
                 </li>
                 <li>
-                    <button>anuncio2</button>
+                    <img src={imgs(`./developer.jpg`)} alt="" />
                 </li>
                 <li>
-                    <button>anuncio3</button>
+                    <img src={imgs(`./developer.jpg`)} alt="" />
                 </li>
                 <li>
-                    <button>anuncio4</button>
+                    <img src={imgs(`./developer.jpg`)} alt="" />
                 </li>
                 <li>
-                    <button>anuncio5</button>
+                    <img src={imgs(`./developer.jpg`)} alt="" />
                 </li> 
             </ul>
         </section>

@@ -16,13 +16,19 @@
         margin: 0;
         padding: 0;
 
-        width: 100%;
+        // ancho completo de page
+        width: 400%;
 
         & li {
             @extend .flex-center;
             list-style: none;
             height: inherit;
-            width: 400%;
+            width: 200%;
+
+            & img {
+                // width: inherit;
+                height: inherit;
+            }
         }
     }
 }

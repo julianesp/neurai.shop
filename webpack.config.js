@@ -57,6 +57,9 @@ module.exports = {
             {
                 test: /\.(png|ico|svg|jpg|gif|jpeg)$/,
                 type: 'asset'
+            },
+            {
+                test: /\.pdf$/,
             }
         ]
     },
