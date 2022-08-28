@@ -1,32 +1,66 @@
 @import './colors';
+@import './heredar';
 
 .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
+    position: relative;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+
     background-color: $color-sombra-blue;
     width: 100%;
-    padding: 20px 0;
+    height: 350px;
+    top: 0;
+    bottom: 0;
+    // padding: 20px 0;
+
+    & img {
+        width: 100%;
+        height: inherit;
+        position: absolute;
+        opacity: .85;
+        z-index: 10;
+    }
+
     & .info-dev {
-        // font-family: 'Dancing Script', cursive;
+        position: relative;
+        @extend .flex-center;
+        border: 1px solid $color-shadow;
+
+        flex-direction: column;
+
+        grid-column-start: 3;
+        grid-column-end: 4;
+
         letter-spacing: 2px;
         font-size: 1.2rem;
         text-align: center;
         color: $color-claro;
+
+        height: inherit;
+
+        z-index: 60;
+
         & .gradiente-text {
             //declaracion de degradado
             background-image: linear-gradient(45deg);
+            margin: 0;
         }
         & img {
+            // top: 20;
+            // bottom: 0;
+
+            display: flex;
+            align-items: flex-start;
             width: 130px;
+            height: 130px;
             border-radius: 50%;
         }
         & .education {
             display: grid;
             grid-template-columns: 1fr 50px;
-            justify-items: end;
-            align-items: center;
+            justify-items: flex-start;
+            align-items: flex-end;
             & img {
                 width: 35px;
                 height: 35px;
@@ -41,6 +75,7 @@
             font-size: .85rem;
         }
     }
+
     & .social {
         & button {
             position: fixed;
