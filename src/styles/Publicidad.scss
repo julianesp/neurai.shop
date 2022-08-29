@@ -2,22 +2,23 @@
 @import '@styles/heredar';
 
 .negocios {
+    @extend .flex-center;
+    
+
+    overflow: hidden;
     border-bottom: 1px solid $color-shadow;
     height: 330px;
-    width: 100%;
+    width: 95%;
     margin-bottom: 50px;
-
+    
     & .negocios-contenedor {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-
+        // @extend .flex-center;
         height: inherit;
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
 
         // ancho completo de page
-        width: 500%;
+        width: 500%;        
 
         & li {
             @extend .flex-center;
