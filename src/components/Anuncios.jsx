@@ -1,4 +1,5 @@
 import React from 'react';
+import '@styles/Anuncios.scss';
 
 const Anuncios = () => {
     return (
