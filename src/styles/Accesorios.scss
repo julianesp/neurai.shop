@@ -1,10 +1,26 @@
+@import '@styles/colors';
+@import '@styles/mixins';
+
 .accesorios-tipo {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+
+  & .visit {
+    @include title;
+
+    & button {
+      @include buttons;      
+    }
+  }
+
   & h2 {
     text-align: center;
   }
 
   & .contenedor {
     display: flex;
+    justify-content: center;
     overflow-x: scroll;
     padding: 0;
     height: 300px;
