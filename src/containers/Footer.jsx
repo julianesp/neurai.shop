@@ -8,10 +8,10 @@ import park from '@img/presentacion/park.jpg'
 const Footer = () => {
     return (
         <div className="footer">
-            <img src={park} alt="Parque Colón Putumayo" />
+            <img className='footer-img' src={park} alt="Parque Colón Putumayo" />
 
             <section className="info-dev">
-                <img src={dev} alt="Desarrollador"/>
+                <img className='info-img' src={dev} alt="Desarrollador"/>
                 <div className="education">
                     <h4>Desarrollado por:<br/>Julián España</h4>
                     <h5>Técnico en sistemas </h5>

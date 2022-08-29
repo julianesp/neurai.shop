@@ -7,14 +7,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;    
 
-    background-color: $color-sombra-blue;
     width: 100%;
-    height: 350px;
+    height: 300px;
     top: 0;
     bottom: 0;
-    // padding: 20px 0;
 
-    & img {
+    & .footer-img {
         width: 100%;
         height: inherit;
         position: absolute;
@@ -25,8 +23,6 @@
     & .info-dev {
         position: relative;
         @extend .flex-center;
-        border: 1px solid $color-shadow;
-
         flex-direction: column;
 
         grid-column-start: 3;
@@ -41,32 +37,23 @@
 
         z-index: 60;
 
-        & .gradiente-text {
-            //declaracion de degradado
-            background-image: linear-gradient(45deg);
-            margin: 0;
-        }
-        & img {
-            // top: 20;
-            // bottom: 0;
-
-            display: flex;
-            align-items: flex-start;
-            width: 130px;
-            height: 130px;
+        & .info-img {
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
+            margin-top: 5px
         }
         & .education {
-            display: grid;
-            grid-template-columns: 1fr 50px;
-            justify-items: flex-start;
-            align-items: flex-end;
-            & img {
-                width: 35px;
-                height: 35px;
-                // min-height: 30px;
-                max-width: 80px;
-                object-fit: cover;
+            @extend .flex-center;
+            flex-direction: column;
+
+            & h4 {
+                margin-top: 5px;
+                margin-bottom: 0;
+            }
+
+            & h5 {
+                margin: 15px 0;
             }
         }
         & h5 {
