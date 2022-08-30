@@ -1,41 +1,36 @@
-@import '@styles/colors';
-@import '@styles/heredar';
+@import "@styles/colors";
+@import "@styles/heredar";
 
 .negocios {
-    @extend .flex-center;   
+  height: 350px;
+  width: 100%;
+  margin-bottom: 50px;
 
-    // overflow: hidden;
-    border-bottom: 1px solid $color-shadow;
-    height: 330px;
-    width: 100%;
-    margin-bottom: 50px;
-    
-    & .negocios-contenedor {
-        
+  & .negocios-contenedor {
+    display: flex;
+    height: inherit;
+    margin: 0 auto;
+    padding: 0;
+
+    // ancho completo de page
+    width: 500%;
+
+    background-color: rgba($color-dark, .2);
+
+    & li {
+      // @extend .flex-center;
+
+      list-style: none;
+      height: inherit;
+      width: 100%;
+
+      & img {
+        width: 100%;
+        object-fit: contain;
+
+        // height para ajustar imagen al alto de su etiqueta padre
         height: inherit;
-        margin: 0 auto;
-        padding: 0;
-
-        // ancho completo de page
-        width: 500%;    
-        
-        overflow-x: scroll;
-        flex-direction: row;
-
-        border: 2px solid red;
-
-        & li {
-            // @extend .flex-center;
-            
-            list-style: none;
-            height: inherit;
-            width: 200%;
-
-            & img {
-                // width: 100%;
-                // object-fit: fill;
-                height: inherit;
-            }
-        }
+      }
     }
+  }
 }
