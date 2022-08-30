@@ -3,9 +3,22 @@
 @import '@styles/mixins';
 
 .container {
+    height: 200px;
+    width: 50%;
+
     margin-left: 100px;
     margin-right: 100px;
-
+    margin-bottom: 50px;
+    padding: 5px;
     
-    display: flex;
+    @extend .flex-center;
+    flex-direction: column;
+
+    border: 1px solid $color-dark;
+
+    & .stores {
+        height: 100px;
+        width: inherit;
+        border: 1px solid #000;
+    }
 }
