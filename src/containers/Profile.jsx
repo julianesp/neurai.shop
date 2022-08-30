@@ -3,7 +3,6 @@ import '@styles/Profile.scss'
 import dev from "@img/developer.jpg"
 import cirp from "@img/empresas/cirp.png"
 import awaspa from "@img/empresas/awaspa.png"
-const urlc = 'https://julianesp.github.io/cirp/'
 
 const Profile = () => {
     return (
@@ -29,8 +28,10 @@ const Profile = () => {
                 </div>
                 <div className="empresa-container">
                     <div class="empresa">
+                        
                         <img src={cirp} alt="Logo CIRP" />
                         <a href="https://julianesp.github.io/cirp/" target={'_blank'}>Visitar CIRP</a>
+                        
                     </div>
                     <div class="empresa">
                         <img src={awaspa} alt="Logo Awaspa" />

@@ -14,7 +14,7 @@ const Header = () => {
         <div className='header'>
             <div className="logo">
                 <img src={logo} />
-                <h1>Neurai</h1>
+                <p>Neurai</p>
             </div>
             <nav className='header__contenedor hamburger hamburger--elastic is-active" type="button'>
                 <div id="menu">

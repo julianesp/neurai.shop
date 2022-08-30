@@ -98,3 +98,13 @@
     }
   }
 }
+
+@media screen and (min-width: 320px) and(max-width: 480px) {
+	.accesorios-tipo {
+		margin: 0 10px;
+
+		& .contenedor {
+			justify-content: unset;
+		}
+	}
+}
