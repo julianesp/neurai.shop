@@ -1,6 +1,7 @@
 @import "./globals";
 @import "./colors";
 @import "./heredar";
+@import '@styles/mixins';
 
 .header {
   position: fixed;
@@ -46,12 +47,21 @@
         align-items: center;
         margin: 0;
         padding: 0;
+
         & li {
           & button {
-            width: 120px;
-            height: 40px;
-            border-radius: 10px;
+            width: max-content;
+            height: 35px;
+            font-size: 1.3rem;
+            padding-right: 100px;
+            background: none;
             border: none;
+
+            &:hover {
+              text-decoration: underline;
+              color: $color-dark;
+              cursor: pointer;
+            }
           }
         }
       }

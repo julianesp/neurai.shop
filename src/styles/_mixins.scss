@@ -5,15 +5,15 @@
 
 	border: 1px solid $color-botones;
 	background-color: rgba($color-botones, .1);
-	border-radius: 10px;
-	padding: 0 20px;
+	border-radius: 30px;
+	padding: 0 5px 0 15px;
 	height: 50px;
 }
 
 @mixin buttons {
 	border: 2px solid $color-claro;
 	background-color: $color-botones;
-	border-radius: 20px;
+	border-radius: 30px;
 	padding: 10px;
 	cursor: pointer;
 	transition: ease-out .2s;

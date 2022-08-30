@@ -16,29 +16,33 @@ const Header = () => {
                 <img src={logo} />
                 <h1>Neurai</h1>
             </div>
-            {/* <nav className='header__contenedor hamburger hamburger--elastic is-active" type="button'>
+            <nav className='header__contenedor hamburger hamburger--elastic is-active" type="button'>
                 <div id="menu">
                     <ul>
                         <li>
-                            <NavLink to='/' >Inicio</NavLink>
+                            <NavLink to='/' >
+                                <button>Inicio</button>
+                            </NavLink>
                         </li>
                     </ul>
                 </div>
                 <div id="menu">
                     <ul>
                         <li>
-                            <NavLink to='/profile'>Mi perfil</NavLink>
+                            <NavLink to='/profile'>
+                                <button>Sobre mí</button>
+                            </NavLink>
                         </li>
                     </ul>
                 </div>
-                <div id="menu">
+                {/* <div id="menu">
                     <ul>
                         <li>
                             <button onClick={''}>Registro</button>
                         </li>
                     </ul>
-                </div>
-            </nav> */}
+                </div> */}
+            </nav>
         </div>
     );
 };
