@@ -9,7 +9,7 @@ const Publicidad = () => {
         <section className="negocios">
             <ul className='negocios-contenedor'>
                 <li>                    
-                    <img src={parque(`./park.jpg`)} alt="" />
+                    <img src={imgs(`./developer.jpg`)} alt="" />    
                 </li>
                 <li>
                     <img src={imgs(`./developer.jpg`)} alt="" />

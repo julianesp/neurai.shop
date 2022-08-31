@@ -127,5 +127,11 @@
         display: none;
       }
     }
+
+    & .logo {
+      & p {
+        margin: 0;
+      }
+    }
   }
 }
