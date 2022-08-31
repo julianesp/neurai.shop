@@ -103,6 +103,11 @@
 	.accesorios-tipo {
 		margin: 0 10px;
 
+    & .visit {
+      height: 35px;
+      font-size: .9rem;
+    }
+
 		& .contenedor {
 			justify-content: unset;
 		}
