@@ -37,7 +37,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .container {
-        width: 305px;
-        margin: 20px 0;
+        min-width: 325px;
+        margin: 10px auto;
     }
 }
