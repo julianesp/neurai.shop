@@ -19,7 +19,7 @@
     
     & .stores {
         display: flex;
-        width: 900px;
+        width: max-content;
         height: 200px;
         border: 3px dotted #000;
         position: relative;
@@ -27,10 +27,17 @@
         & .tipos {
             @extend .flex-center;
 
-            width: 200px;
+            width: 300px;
             margin: 0 10px 0 0;
             height: calc(100% - 10px);
             border: 1px solid #000;
         }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .container {
+        width: 305px;
+        margin: 20px 0;
     }
 }
