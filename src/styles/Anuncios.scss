@@ -1,24 +1,36 @@
-@import '@styles/heredar';
-@import '@styles/colors';
-@import '@styles/mixins';
+@import "@styles/heredar";
+@import "@styles/colors";
+@import "@styles/mixins";
 
 .container {
-    height: 200px;
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    height: 300px;
 
     margin-left: 100px;
     margin-right: 100px;
     margin-bottom: 50px;
     padding: 5px;
-    
-    @extend .flex-center;
-    flex-direction: column;
 
     border: 1px solid $color-dark;
-
+    border-radius: 25px;
+    overflow-x: scroll;
+    
     & .stores {
-        height: 100px;
-        width: inherit;
-        border: 1px solid #000;
+        display: flex;
+        width: 900px;
+        height: 200px;
+        border: 3px dotted #000;
+        position: relative;
+        
+        & .tipos {
+            @extend .flex-center;
+
+            width: 200px;
+            margin: 0 10px 0 0;
+            height: calc(100% - 10px);
+            border: 1px solid #000;
+        }
     }
 }

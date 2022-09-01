@@ -9,7 +9,7 @@ const salud = require.context('@pictures/salud/', true)
 
 const Accesorios = () => {
     return (
-        <div>
+        <section>
             <section class="accesorios-tipo">
             <div className="visit">
                 <h2>Celulares</h2>
@@ -162,7 +162,7 @@ const Accesorios = () => {
                 </li>
             </ul>
             </section>
-        </div>
+        </section>
         
 
         

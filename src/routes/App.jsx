@@ -7,7 +7,6 @@ import Home from '../pages/Home'
 import NotFound from '../pages/NotFound'
 import Profile from '../containers/Profile'
 import Footer from '../containers/Footer'
-import Anuncios from '../components/Anuncios'
 
 const App = () => {
     return (
