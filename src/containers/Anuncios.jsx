@@ -28,6 +28,9 @@ const Anuncios = () => {
                 <div className="tipos">
                     <img src='../assets/img/shop.png' alt="" /> 6
                 </div>
+                <div className="tipos">
+                    <img src='../assets/img/shop.png' alt="" /> 6
+                </div>
             </div>
         </section>
     );
