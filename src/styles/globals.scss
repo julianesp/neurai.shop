@@ -48,15 +48,19 @@ body {
 
     & .nav {
         position: fixed;
-        width: 100%;
+        width: 50%;
         padding: 0;
-        top: 0;
-        bottom: 0;
+        bottom: 50px;
+        right: 15px;
 
-        margin: 0;
+        height: 300px;
+        width: 200px;
+
+        border: 2px solid $color-botones;
+        border-radius: 20px;
 
         z-index: 888;
-        background-color: $color-shadow;
+        background-color: $color-claro;
         @extend .flex-center;
         flex-direction: column;
 
@@ -90,14 +94,14 @@ body {
         }
 
         // para que el menú venga desde abajo
-        transform: translate(0, 150%);
+        // transform: translate(0, 150%);
+        transform: translate(140%, 0);
+
 
         &.is-active {
             transform: translate(0, 0);
         }
     }
-
-
 }
 
 .burger-button {
@@ -117,7 +121,7 @@ body {
     bottom: 0;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 767px){
     .burger-button {
         display: none;
     }
