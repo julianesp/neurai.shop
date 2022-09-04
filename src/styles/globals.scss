@@ -1,4 +1,5 @@
 @import '../styles/colors';
+@import '@styles/heredar';
 
 @font-face {
     font-family: "icomoon";
@@ -73,7 +74,7 @@ body {
                 margin: 0;
                 margin-bottom: 10px;
                 padding: 0;
-                font-size: 1.3rem;
+                font-size: 1.1rem;
                 border: none;
                 border-radius: 10px;
                 color: $color-dark;
@@ -122,6 +123,17 @@ body {
 }
 
 @media screen and (min-width: 767px){
+    body {
+        & .nav {
+            & li {
+                & button {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
     .burger-button {
         display: none;
     }
