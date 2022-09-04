@@ -1,0 +1,1 @@
+function profile(i){location.href="../containers/Profile.jsx"}function cirp(i){location.href="https://julianesp.github.io/cirp/"}function inicio(i){location.href="../../public/index.html"}
