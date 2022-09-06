@@ -1,80 +1,82 @@
 @import '@styles/colors';
 @import '@styles/mixins';
 
-.accesorios-tipo {
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 50px;
+.accesorios {
+  & .accesorios-tipo {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
 
-  
-  & .visit {
-    @include title;
-    
-    & button {
-      @include buttons;      
-    }
-  }
-  
-  & h2 {
-    text-align: center;
-  }
-  
-  & .contenedor {
-    display: flex;
-    
-    overflow-x: scroll;
-
-    @include barra;
-
-    padding: 0;
-    height: 274px;
-    position: relative;
-    transition: 0.5s;
-
-    & .caja {
-      @include caja-productos;
-      transition: ease-in .6s;   
-
-      //animacion solo en :hover y en resoluciones mayores a 1028px
-      &:hover {
-          animation-name: expandir;
-          animation-duration: 1s;
-          animation-fill-mode: forwards;
-          transition: .6s;
-      }
-
-      & h3 {
-        font-size: .9rem;
-        margin: 0;
-        top: 0;
-      }
-
-      & img {
-        width: 150px;
-        min-width: 150px;
-        max-width: 250px;
-        height: 150px;
-        object-fit: cover;
-      }
-
+    & .visit {
+      @include title;
+      
       & button {
-        width: 70px;
-        height: 30px;
-        background-color: rgb(67, 239, 46);
-        border: none;
-        border-radius: 8px;
-        color: #fff;
-        font-weight: 700;
-        font-size: 1.1rem;
-        cursor: pointer;
-      	transition: ease-out 0.2s;
-
+        @include buttons;      
+      }
+    }
+    
+    & h2 {
+      text-align: center;
+    }
+    
+    & .contenedor {
+      display: flex;
+      
+      overflow-x: scroll;
+  
+      @include barra;
+  
+      padding: 0;
+      height: 274px;
+      position: relative;
+      transition: 0.5s;
+  
+      & .caja {
+        @include caja-productos;
+        transition: ease-in .6s;   
+  
+        //animacion solo en :hover y en resoluciones mayores a 1028px
         &:hover {
-          transform: scale(.9);
+            animation-name: expandir;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            transition: .6s;
+        }
+  
+        & h3 {
+          font-size: .9rem;
+          margin: 0;
+          top: 0;
+        }
+  
+        & img {
+          width: 150px;
+          min-width: 150px;
+          max-width: 250px;
+          height: 150px;
+          object-fit: cover;
+        }
+  
+        & button {
+          width: 70px;
+          height: 30px;
+          background-color: rgb(67, 239, 46);
+          border: none;
+          border-radius: 8px;
+          color: #fff;
+          font-weight: 700;
+          font-size: 1.1rem;
+          cursor: pointer;
+          transition: ease-out 0.2s;
+  
+          &:hover {
+            transform: scale(.9);
+          }
         }
       }
-    }
+    }   
   }
+
 }
 
 @media screen and (min-width: 320px) and(max-width: 480px) {
@@ -95,4 +97,12 @@
       }
 		}
 	}
+}
+
+@media screen and (min-width: 481px) and(max-width: 768px) {
+  .accesorios {
+    & .accesorios-tipo {
+      margin: 20px 30px;
+    }
+  }
 }
