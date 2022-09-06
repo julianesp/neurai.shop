@@ -1,5 +1,5 @@
 function profile(params) {
-    location.href = '../containers/Profile.jsx'
+    location.href = '../containers/Profile'
 }
 
 function cirp(params) {
@@ -7,5 +7,5 @@ function cirp(params) {
 }
 
 function inicio(params) {
-    location.href = '../../public/index.html'
+    location.href = '../public/index.html'
 }

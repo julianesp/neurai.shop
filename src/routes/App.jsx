@@ -7,6 +7,7 @@ import Home from '../pages/Home'
 import NotFound from '../pages/NotFound'
 import Profile from '../containers/Profile'
 import Footer from '../containers/Footer'
+import Menu from '../containers/Menu'
 
 const App = () => {
     return (
@@ -19,6 +20,7 @@ const App = () => {
                     <Route exact path='/profile' element={<Profile />} />
                     <Route path='*' element={<NotFound />} />
                 </Routes>
+                <Menu />
                 <Footer />
             </Layout>
         </BrowserRouter>
