@@ -5,29 +5,33 @@
 .container {
     position: relative;
 
-    width: 98%;
+    height: 320px;
 
-    margin-bottom: 50px;
-    // padding: 5px;
-
-    border: 1px solid $color-dark;
-    background-color: $color-dark-soft;
+    margin: 0 100px 50px 100px;
 
     overflow-x: scroll;
-    
+
+    @include barra;
+
     & .title {
+        position: relative;
+        display: flex;
+        text-align: center;
 
         & h3 {
+            position: absolute;
             text-align: center;
         }
     }
-    
+
     & .stores {
         display: flex;
         align-items: center;
         height: 250px;
         position: relative;
-        
+
+        top: 60px;
+
         & .store-listado {
             display: flex;
             height: calc(100% - 10px);
@@ -39,14 +43,16 @@
                 background-color: $color-claro;
                 @extend .flex-center;
 
-                width: 600px;
+                width: 300px;
+                height: 220px;
+
                 margin: 0 10px 0 0;
 
                 border: 1px solid #000;
                 border-radius: 10px;
             }
         }
-        
+
     }
 }
 

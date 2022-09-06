@@ -3,12 +3,12 @@ import '@styles/Anuncios.scss';
 // import '@img/'
 
 const Anuncios = () => {
-    return (
+    return (        
         <section className='container'>
-            {/* <div className="title">
+            <div className="title">
                 <h3>Tiendas del pueblo</h3>
-            </div> */}
-
+            </div>
+            
             <div className="stores">
                 <ul className='store-listado'>
                     <li className='tipos'>
