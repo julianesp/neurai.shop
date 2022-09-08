@@ -4,6 +4,7 @@ import hamburgerMenu from './js/menu'
 import App from './routes/App'
 
 ReactDOM.render(<App/>, document.getElementById('app'))
+// ReactDOM.createRoot(<App/>, document.getElementById('app'))
 
 const d = document
 

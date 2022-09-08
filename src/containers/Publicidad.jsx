@@ -10,7 +10,7 @@ const Publicidad = () => {
                 <li>                    
                     <img src={imgs(`./shop.png`)} alt="" />    
                 </li>
-                <li>                    
+                {/* <li>                    
                     <img src={imgs(`./shop.png`)} alt="" />    
                 </li>
                 <li>                    
@@ -18,7 +18,7 @@ const Publicidad = () => {
                 </li>
                 <li>                    
                     <img src={imgs(`./shop.png`)} alt="" />    
-                </li>
+                </li> */}
             </ul>
         </section>
     );
