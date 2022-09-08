@@ -12,16 +12,13 @@
     margin: 0 auto;
     padding: 0;
 
-    // ancho completo de page
-    // width: 500%;
-
     background-color: rgba($color-dark, .2);
 
     & li {
-      // @extend .flex-center;
+      @extend .flex-center;
 
       list-style: none;
-      height: inherit;
+      height: calc(100% - 30px);
       width: 100%;
 
       & img {
@@ -39,8 +36,8 @@
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .negocios {
-    overflow: hidden;
-    margin-top: -10px;
+    // overflow: hidden;
+    // margin-top: -10px;
     & .negocios-contenedor {
 
       & li {

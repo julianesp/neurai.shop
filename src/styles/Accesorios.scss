@@ -90,6 +90,10 @@
       & .visit {
         height: 40px;
         font-size: .9rem;
+
+        & button {
+          height: 35px;
+        }
       }
   
       & .contenedor {
@@ -105,11 +109,15 @@
   }
 }
 
-@media screen and (min-width: 481px) and(max-width: 767px) {
-  .accesorios {
-    
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .accesorios {    
     & .accesorios-tipo {
-      // margin: 20px 30px;
+      margin: 0 10px;
+      & .visit {
+        & button {
+          // height: 35px;
+        }
+      }
     }
   }
 }
