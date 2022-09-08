@@ -82,7 +82,7 @@
 
 }
 
-@media screen and (min-width: 320px) and(max-width: 480px) {
+@media screen and (min-width: 320px) and(max-width: 767px) {
   .accesorios {
     & .accesorios-tipo {
       margin: 0 10px;
@@ -105,11 +105,11 @@
   }
 }
 
-@media screen and (min-width: 481px) and(max-width: 768px) {
-  .accesorios {
+// @media screen and (min-width: 481px) and(max-width: 768px) {
+//   .accesorios {
     
-    & .accesorios-tipo {
-      // margin: 20px 30px;
-    }
-  }
-}
+//     & .accesorios-tipo {
+//       // margin: 20px 30px;
+//     }
+//   }
+// }
