@@ -2,6 +2,9 @@
 @import '@styles/mixins';
 
 .accesorios {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   & .accesorios-tipo {
     margin-left: 100px;
     margin-right: 100px;
@@ -102,10 +105,11 @@
   }
 }
 
-// @media screen and (min-width: 481px) and(max-width: 768px) {
-//   .accesorios {
-//     & .accesorios-tipo {
-//       margin: 20px 30px;
-//     }
-//   }
-// }
+@media screen and (min-width: 481px) and(max-width: 768px) {
+  .accesorios {
+    
+    & .accesorios-tipo {
+      // margin: 20px 30px;
+    }
+  }
+}
