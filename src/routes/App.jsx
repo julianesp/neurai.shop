@@ -8,6 +8,7 @@ import NotFound from '../pages/NotFound'
 import Profile from '../containers/Profile'
 import Footer from '../containers/Footer'
 import Menu from '../containers/Menu'
+import PageAccesorio from '../containers/PageAccesorio'
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
                     <Route exact path='/' element={<Home />} />
                     <Route exact path='/products' element={<Accesorios />} />
                     <Route exact path='/profile' element={<Profile />} />
+                    <Route exact path='/pageAcce' element={<PageAccesorio />} />
                     <Route path='*' element={<NotFound />} />
                 </Routes>
                 <Menu />

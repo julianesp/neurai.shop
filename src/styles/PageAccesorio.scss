@@ -1,0 +1,45 @@
+@import '@styles/heredar';
+
+.container-accesorios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        'title title'
+        'imagen envio'
+        'descripcion descripcion';
+
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    gap: 10px;
+    
+    & .title {
+        grid-area: title;
+        border: 1px solid #000;
+        border-radius: 10px;
+        @extend .flex-center;
+    }
+    & .imgs {
+        grid-area: imagen;
+        border: 1px solid #000;
+        border-radius: 10px;
+        @extend .flex-center;
+    }
+    & .send {
+        grid-area: envio;        
+        border: 1px solid #000;
+        border-radius: 10px;
+        padding: 0 30px;
+
+        & h3 {
+            // text-align: center;
+        }
+    }
+    & .descripcion {
+        grid-area: descripcion;        
+        border: 1px solid #000;
+        border-radius: 10px;
+        padding: 0 30px;
+    }
+}

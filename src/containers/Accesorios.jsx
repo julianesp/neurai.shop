@@ -1,5 +1,6 @@
 import React from "react";
 import "@styles/Accesorios.scss";
+import '@containers/PageAccesorio'
 
 //acceso directo a imagenes
 const cellphoneImages = require.context("@pictures/celulares/", true);

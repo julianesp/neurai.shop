@@ -29,6 +29,15 @@ const Header = () => {
                 <div id="menu">
                     <ul>
                         <li>
+                            <NavLink to='/pageAcce'>
+                                <button>Accesorios</button>
+                            </NavLink>
+                        </li>
+                    </ul>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li>
                             <NavLink to='/profile'>
                                 <button>Sobre mí</button>
                             </NavLink>
