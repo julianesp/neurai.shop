@@ -26,6 +26,7 @@ module.exports = {
             '@styles': path.resolve(__dirname, 'src/styles/'),
             '@pictures': path.resolve(__dirname, 'src/assets/pictures/'),
             '@img': path.resolve(__dirname, 'src/assets/img/'),
+            '@js': path.resolve(__dirname, 'src/js/'),
         }
     },
     //el module encierra a los loaders
