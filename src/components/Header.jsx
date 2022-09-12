@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Menu from '@containers/Menu'
 import '@styles/Header.scss';
 import logo from '@img/cerebro.svg';
 import pages from '../js/pages'
@@ -10,13 +11,15 @@ import '../js/menu';
 {/* <script src="../js/menu.js" type='module'></script> */}
 
 const Header = () => {
+    
+
     return (
         <div className='header'>
             <div className="logo">
                 <img src={logo} />
                 <p>Neurai</p>
             </div>
-            <nav className='header__contenedor hamburger hamburger--elastic is-active" type="button'>
+            <nav className='header__contenedor hamburger hamburger--elastic is-active" type="button' onClick={handleToggle}>
                 <div id="menu">
                     <ul>
                         <li>
