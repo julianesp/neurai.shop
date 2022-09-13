@@ -29,7 +29,7 @@ const Header = () => {
                         </li>
                     </ul>
                 </div>
-                <div id="menu">
+                {/* <div id="menu">
                     <ul>
                         <li>
                             <NavLink to='/pageAcce'>
@@ -37,7 +37,7 @@ const Header = () => {
                             </NavLink>
                         </li>
                     </ul>
-                </div>
+                </div> */}
                 <div id="menu">
                     <ul>
                         <li>

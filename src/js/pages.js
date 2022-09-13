@@ -11,5 +11,5 @@ function inicio(params) {
 }
 
 function pageAccesorios(params) {
-    location.href = '../js/pages.js'
+    location.href = '../components/PageAccesorio.jsx'
 }
