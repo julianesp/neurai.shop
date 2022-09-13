@@ -19,7 +19,7 @@ const Header = () => {
                 <img src={logo} />
                 <p>Neurai</p>
             </div>
-            <nav className='header__contenedor hamburger hamburger--elastic is-active" type="button' onClick={handleToggle}>
+            <nav className='header__contenedor hamburger hamburger--elastic is-active" type="button'>
                 <div id="menu">
                     <ul>
                         <li>

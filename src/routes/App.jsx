@@ -8,7 +8,7 @@ import NotFound from '../pages/NotFound'
 import Profile from '../containers/Profile'
 import Footer from '../containers/Footer'
 import Menu from '../containers/Menu'
-import PageAccesorio from '../containers/PageAccesorio'
+import PageAccesorio from '../components/PageAccesorio'
 
 const App = () => {
     return (

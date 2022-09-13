@@ -1,6 +1,7 @@
 import React from "react";
 import "@styles/Accesorios.scss";
-import '@containers/PageAccesorio'
+import '@components/PageAccesorio'
+import '../js/pages'
 
 //acceso directo a imagenes
 const cellphoneImages = require.context("@pictures/celulares/", true);
@@ -14,7 +15,7 @@ const Accesorios = () => {
             <section className="accesorios-tipo">
                 <div className="visit">
                     <h2>Celulares</h2>
-                    <button>Ver más</button>
+                    <button onClick='pageAccesorios()'>Ver más</button>
                 </div>
 
                 <ul className="contenedor">

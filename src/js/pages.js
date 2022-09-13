@@ -9,3 +9,7 @@ function cirp(params) {
 function inicio(params) {
     location.href = '../public/index.html'
 }
+
+function pageAccesorios(params) {
+    location.href = '../js/pages.js'
+}
