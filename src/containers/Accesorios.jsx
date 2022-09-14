@@ -1,5 +1,6 @@
 import React from "react";
 import "@styles/Accesorios.scss";
+import PageAccesorio from '@components/PageAccesorio';
 
 //acceso directo a imagenes
 const cellphoneImages = require.context("@pictures/celulares/", true);
@@ -8,12 +9,20 @@ const librosNewImages = require.context("@pictures/books/", true);
 const salud = require.context("@pictures/salud/", true);
 
 const Accesorios = () => {
+    const openProducts = () => {
+        function open(params) {
+            console.log('clic');
+            <PageAccesorio/>            
+        }
+        open()
+    }
+
     return (
         <section className="accesorios">
             <section className="accesorios-tipo">
                 <div className="visit">
                     <h2>Celulares</h2>
-                    <button>Ver más</button>
+                    <button onClick={openProducts}>Ver más</button>
                 </div>
 
                 <ul className="contenedor">
@@ -189,6 +198,7 @@ const Accesorios = () => {
                     </li>
                 </ul>
             </section>
+
         </section>
     );
 };

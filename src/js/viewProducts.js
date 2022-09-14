@@ -1,3 +1,3 @@
-function braza(params) {
-    location.href = '../containers/Profile.jsx'
+function openAccesorios(params) {
+    document.loca
 }

@@ -7,7 +7,6 @@ import React from 'react';
 import '@styles/PageAccesorio.scss'
 
 const PageAccesorio = () => {
-    // alert('ready');
     return (
         <section className='container-accesorios'>
             <div className="title">
