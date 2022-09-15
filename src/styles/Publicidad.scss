@@ -60,7 +60,7 @@
     background-color: $color-fondo-soft;
     border-radius: 10px;
 
-    & .activo {
+    &.activo {
       background-color: $color-fondo-sky;
     }
   }

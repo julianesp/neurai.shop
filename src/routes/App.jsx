@@ -9,6 +9,7 @@ import Profile from '../containers/Profile'
 import Footer from '../containers/Footer'
 import Menu from '../containers/Menu'
 import PageAccesorio from '../components/PageAccesorio'
+import '../js/carrusel'
 
 const App = () => {
     return (
