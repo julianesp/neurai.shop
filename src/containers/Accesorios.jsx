@@ -1,5 +1,7 @@
 import React from "react";
 import "@styles/Accesorios.scss";
+import PageAccesorio from '@components/PageAccesorio';
+import { NavLink } from "react-router-dom";
 
 //acceso directo a imagenes
 const cellphoneImages = require.context("@pictures/celulares/", true);
@@ -17,7 +19,9 @@ const Accesorios = () => {
             <section className="accesorios-tipo">
                 <div className="visit">
                     <h2>Celulares</h2>
-                    <button onClick={openPage}>Ver más</button>
+                        <NavLink to='/pageAcce'>
+                            <button>Ver más</button>
+                        </NavLink>
                 </div>
 
                 <ul className="contenedor">
