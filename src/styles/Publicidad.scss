@@ -3,16 +3,66 @@
 
 .carrousel {
   height: 350px;
-  width: 90%;
+  width: 100%;
   max-width: 120em;
 
+  margin-top: 40px;
   margin-bottom: 50px;
 
   border: 1px solid #000;
 
   & .grande {
     width: 500%;
-    background-color: aquamarine;
+    // background-color: aquamarine;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    //animations
+    transition: all .5s ease-in;
+    transform: translateX(0%);
+
+    & img {
+      // border: 1px solid #000;
+      // height: 50px;
+    }
+  }
+  & .img {
+    width: calc(100% / 5);
+    height: 270px;
+    background-color: $color-shadow;
+    // border: 1px solid #000;
+  }
+
+  
+  & .puntos {
+    width: auto;
+    background-color: $color-shadow;
+    padding: .5em;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    list-style: none;
+    border-radius: 10px;
+    
+  }
+  
+  & .punto {
+    width: 2em;
+    height: 2em;
+    margin-right: 20px;
+    
+    background-color: $color-fondo-soft;
+    border-radius: 10px;
+
+    & .activo {
+      background-color: $color-fondo-sky;
+    }
   }
 }
 
