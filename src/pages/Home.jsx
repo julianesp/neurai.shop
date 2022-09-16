@@ -4,14 +4,13 @@ import styles from '@styles/Home.scss'
 import Acc from '../containers/Accesorios';
 import Anuncios from '../containers/Anuncios';
 import Publicidad from '../containers/Publicidad';
-import '../js/carrusel'
 
 const Home = () => {
     return (
         <div className='main'>            
-                <Publicidad />
-                <Acc />
-                <Anuncios />            
+            <Publicidad />
+            <Acc />
+            <Anuncios />            
         </div>
     );
 };

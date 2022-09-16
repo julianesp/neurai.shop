@@ -1,10 +1,9 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "@styles/Accesorios.scss";
 
 // llamando a formato accesorio 
 import Productos from "../components/Productos";
 
-import PageAccesorio from '@components/PageAccesorio';
 import { NavLink } from "react-router-dom";
 
 //acceso directo a imagenes
@@ -14,17 +13,16 @@ const librosNewImages = require.context("@pictures/books/", true);
 const salud = require.context("@pictures/salud/", true);
 
 const Accesorios = () => {
-    const pro = Productos
-    
-
-    const [stateProducts, setStateProducts] = useContext([])
+    // const {state} = useContext(Productos)
 
     return (
         <section className="accesorios">
             <section className="accesorios-tipo">
                 <div className="visit">
                     <h2>Celulares</h2>
-                    <button>Ver más</button>
+                    <NavLink to='/celulares'>
+                        <button>Ver más</button>
+                    </NavLink>
                 </div>
 
                 <ul className="contenedor">
@@ -40,11 +38,11 @@ const Accesorios = () => {
                     </li>
                     <li className="caja">
                         <h3>Correa reloj</h3>
-                        <img
-                            src={cellphoneImages(`./correa/1.jpg`)}
-                            alt="Correa para reloj inteligente"
-                        />
+                        {/* <div>{sta</div> */}
+                        <img src={cellphoneImages(`./correa/1.jpg`)}
+                            alt="Correa para reloj inteligente"/>
                         <button>Ver</button>
+
                     </li>
                     <li className="caja">
                         <h3>Funda iPhone</h3>
