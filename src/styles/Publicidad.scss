@@ -6,10 +6,10 @@
   width: 100%;
   max-width: 120em;
 
-  margin-top: 40px;
+  margin-top: 10px;
   margin-bottom: 50px;
 
-  border: 1px solid #000;
+  // border: 1px solid #000;
 
   & .grande {
     width: 500%;
@@ -30,8 +30,11 @@
     }
   }
   & .img {
+    display: flex;
+    align-items: center;
+
     width: calc(500% / 5);
-    height: 270px;
+    height: 320px;
     background-color: $color-shadow;
     // border: 1px solid #000;
   }
@@ -39,7 +42,7 @@
   
   & .puntos {
     width: auto;
-    background-color: $color-shadow;
+    // background-color: $color-shadow;
     padding: .5em;
     
     display: flex;
@@ -49,7 +52,6 @@
     
     list-style: none;
     border-radius: 10px;
-    
   }
   
   & .punto {
@@ -57,11 +59,14 @@
     height: 2em;
     margin-right: 20px;
     
-    background-color: $color-fondo-soft;
     border-radius: 10px;
+    border: 2px solid $color-shadow;
+    background-color: $color-claro;
+
+    cursor: pointer;
 
     &.activo {
-      background-color: $color-fondo-sky;
+      background-color: $color-botones;
     }
   }
 }
