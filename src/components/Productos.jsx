@@ -11,9 +11,7 @@ const Productos = () => {
     return (
         <section className="containerProductos">
             <div className="productoDetalle">
-                {productos.map(producto => (
-                    <ProductoArticulo/>
-                ))}
+                
             </div>
         </section>
     );

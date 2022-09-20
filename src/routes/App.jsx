@@ -10,9 +10,8 @@ import Footer from '../containers/Footer'
 import Menu from '../containers/Menu'
 import PageAccesorio from '../components/PageAccesorio'
 import '../js/carrusel'
-import AccesoriosContainer from '@containers/AccesoriosContainer'
 import AccesoriosCelular from '@containers/AccesoriosCelular'
-
+// import Accesorios from '@containers/Accesorios'
 
 const App = () => {
     return (
@@ -23,11 +22,10 @@ const App = () => {
                     <Route exact path='/' element={<Home />} />
                     <Route exact path='/products' element={<Accesorios />} />
                     <Route exact path='/profile' element={<Profile />} />
+
                     <Route exact path='/pageAcce' element={<PageAccesorio />} />
 
-                    <Route exact path='/accesoriosContainer' element={<AccesoriosContainer />} />
-
-                    <Route exact path='/celulares' element={<AccesoriosCelular />} />
+                    <Route exact path='/accesoriosCelulares' element={<AccesoriosCelular />} />
 
                     <Route path='*' element={<NotFound />} />
                 </Routes>

@@ -1,9 +1,5 @@
 import React, { useContext, useState } from "react";
 import "@styles/Accesorios.scss";
-
-// llamando a formato accesorio 
-import Productos from "../components/Productos";
-
 import { NavLink } from "react-router-dom";
 
 //acceso directo a imagenes
@@ -13,14 +9,13 @@ const librosNewImages = require.context("@pictures/books/", true);
 const salud = require.context("@pictures/salud/", true);
 
 const Accesorios = () => {
-    // const {state} = useContext(Productos)
 
     return (
         <section className="accesorios">
             <section className="accesorios-tipo">
                 <div className="visit">
                     <h2>Celulares</h2>
-                    <NavLink to='/celulares'>
+                    <NavLink to='/accesoriosCelulares'>
                         <button>Ver más</button>
                     </NavLink>
                 </div>
@@ -38,7 +33,6 @@ const Accesorios = () => {
                     </li>
                     <li className="caja">
                         <h3>Correa reloj</h3>
-                        {/* <div>{sta</div> */}
                         <img src={cellphoneImages(`./correa/1.jpg`)}
                             alt="Correa para reloj inteligente"/>
                         <button>Ver</button>
