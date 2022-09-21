@@ -101,7 +101,8 @@
       }
   
       & .contenedor {
-        justify-content: unset;
+        display: flex;
+        // justify-content: unset;
         margin-bottom: 50px;
   
         & .caja {
