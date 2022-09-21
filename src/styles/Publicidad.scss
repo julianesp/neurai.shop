@@ -5,7 +5,7 @@
   position: relative;
   height: 350px;
   width: 100%;
-  max-width: 120em;
+  // max-width: 120em;
 
   margin-top: 10px;
   margin-bottom: 50px;
@@ -14,11 +14,11 @@
 
   & .grande {
     width: 500%;
-    // background-color: aquamarine;
+    
 
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
+    // flex-flow: row nowrap;
+    // justify-content: flex-start;
     align-items: center;
 
     //animations
@@ -69,13 +69,12 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .carrousel {
+    height: 390px;
+    overflow: hidden;
     & .grande {
-      width: 100%;
-      object-fit: fill;
-      & .img {
-      }
+      // width: 100%;
     }
   }
 }
