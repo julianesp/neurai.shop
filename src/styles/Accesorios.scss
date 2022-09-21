@@ -56,9 +56,9 @@
         }
   
         & img {
-          width: 100px;
+          width: 150px;
           height: 120px;
-          min-width: 120px;
+          min-width: 150px;
           max-width: 250px;
           min-height: 100px;
           // object-fit: cover;
@@ -106,7 +106,7 @@
         margin-bottom: 50px;
   
         & .caja {
-          
+          // width: 200px;
         }
       }
     }
