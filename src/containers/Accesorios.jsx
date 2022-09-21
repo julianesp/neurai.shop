@@ -14,11 +14,11 @@ const Accesorios = () => {
     return (
         <section className="accesorios">
             <section className="accesorios-tipo">
-                <div className="visit">
-                    <h2>Ellas</h2>
+                <div className="visit" id="img1">
+                    <h2>Ellas</h2>                
                     <button>Ver más</button>                    
                 </div>
-
+                
                 <ul className="contenedor">
                     <li className="caja">
                         <h3>Brochas maquillaje</h3>
@@ -26,11 +26,13 @@ const Accesorios = () => {
                             src={ellas(`./brochas/1.jpg`)}
                             alt="Brazalete celulares"
                         />
+                        <button>Ver</button>
                     </li>
                 </ul>
+
             </section>
             <section className="accesorios-tipo">
-                <div className="visit">
+                <div className="visit" id="img2">
                     <h2>Celulares</h2>
                     <NavLink to='/accesoriosCelulares'>
                         <button>Ver más</button>
@@ -81,7 +83,7 @@ const Accesorios = () => {
             </section>
 
             <section className="accesorios-tipo">
-                <div className="visit">
+                <div className="visit" id="img3">
                     <h2>Computadores</h2>
                     <button>Ver más</button>
                 </div>
@@ -128,7 +130,7 @@ const Accesorios = () => {
             </section>
 
             <section className="accesorios-tipo">
-                <div className="visit">
+                <div className="visit" id="img4">
                     <h2>Libros nuevos</h2>
                     <button>Ver más</button>
                 </div>
@@ -163,7 +165,7 @@ const Accesorios = () => {
             </section>
 
             <section className="accesorios-tipo">
-                <div className="visit">
+                <div className="visit" id="img5">
                     <h2>Libros usados</h2>
                     <button>Ver más</button>
                 </div>
@@ -198,7 +200,7 @@ const Accesorios = () => {
             </section>
 
             <section className="accesorios-tipo">
-                <div className="visit">
+                <div className="visit" id="img6">
                     <h2>Salud</h2>
                     <button>Ver más</button>
                 </div>
