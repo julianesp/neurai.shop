@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+
   & .accesorios-tipo {
     margin-left: 100px;
     margin-right: 100px;
@@ -26,7 +27,7 @@
       // display: flex;
 
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       
       overflow-x: scroll;
   
@@ -55,11 +56,12 @@
         }
   
         & img {
-          width: 150px;
-          min-width: 100px;
+          width: 100px;
+          height: 120px;
+          min-width: 120px;
           max-width: 250px;
-          height: 150px;
-          object-fit: cover;
+          min-height: 100px;
+          // object-fit: cover;
         }
   
         & button {
@@ -87,7 +89,7 @@
 @media screen and (min-width: 320px) and(max-width: 480px) {
   .accesorios {
     & .accesorios-tipo {
-      margin: 0 10px;
+      margin: 0 1px;
   
       & .visit {
         height: 40px;
