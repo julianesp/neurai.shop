@@ -11,9 +11,7 @@
     margin-right: 100px;
     margin-bottom: 50px;
 
-    & .visit {
-      
-      
+    & .visit {      
       @include title;
       
       & img {
@@ -96,7 +94,8 @@
 @media screen and (min-width: 320px) and(max-width: 480px) {
   .accesorios {
     & .accesorios-tipo {
-      margin: 0 1px 20px;
+      margin: 0 10px 20px;
+      // border: unset;
   
       & .visit {
         display: flex;
@@ -106,9 +105,11 @@
 
         height: 240px;
         font-size: .9rem;
+
+        border: 1px solid $color-shadow;
         
         & h2 {
-          color: white;
+          color: $color-claro;
           font-size: 2rem;
           border: 1px solid $color-claro;
           background-color: #baba;
@@ -166,9 +167,7 @@
     & .accesorios-tipo {
       margin: 0 10px;
       & .visit {
-        & button {
-          // height: 35px;
-        }
+        
       }
     }
   }
