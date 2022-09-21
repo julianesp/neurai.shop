@@ -2,6 +2,7 @@
 @import "@styles/heredar";
 
 .carrousel {
+  position: relative;
   height: 350px;
   width: 100%;
   max-width: 120em;
@@ -24,19 +25,16 @@
     transition: all .5s ease-in;
     transform: translateX(0%);
 
-    & img {
-      // border: 1px solid #000;
-      // height: 50px;
-    }
-  }
-  & .img {
-    display: flex;
-    align-items: center;
+    & .img {
+      // display: flex;
+      // align-items: center;
+      
+      width: calc(500% / 5);
+      height: 320px;
+      // background-color: $color-shadow;
 
-    width: calc(500% / 5);
-    height: 320px;
-    background-color: $color-shadow;
-    // border: 1px solid #000;
+      
+    }
   }
 
   
@@ -72,16 +70,12 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  .negocios {
-
-    // overflow: hidden;
-    // margin-top: -10px;
-    & .negocios-contenedor {
-
-      & li {
-        // overflow: hidden;
+  .carrousel {
+    & .grande {
+      width: 100%;
+      object-fit: fill;
+      & .img {
       }
     }
-
   }
 }

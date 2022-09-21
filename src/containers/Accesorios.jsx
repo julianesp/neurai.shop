@@ -7,11 +7,28 @@ const cellphoneImages = require.context("@pictures/celulares/", true);
 const laptopImages = require.context("@pictures/laptops/", true);
 const librosNewImages = require.context("@pictures/books/", true);
 const salud = require.context("@pictures/salud/", true);
+const ellas = require.context("@pictures/ellas/", true);
 
 const Accesorios = () => {
 
     return (
         <section className="accesorios">
+            <section className="accesorios-tipo">
+                <div className="visit">
+                    <h2>Ellas</h2>
+                    <button>Ver más</button>                    
+                </div>
+
+                <ul className="contenedor">
+                    <li className="caja">
+                        <h3>Brochas maquillaje</h3>
+                        <img
+                            src={ellas(`./brochas/1.jpg`)}
+                            alt="Brazalete celulares"
+                        />
+                    </li>
+                </ul>
+            </section>
             <section className="accesorios-tipo">
                 <div className="visit">
                     <h2>Celulares</h2>
@@ -100,10 +117,10 @@ const Accesorios = () => {
                         <button>Ver</button>
                     </li>
                     <li className="caja">
-                        <h3>Adaptador USB</h3>
+                        <h3>Adaptador USB - Tipo C</h3>
                         <img
-                            src={laptopImages(`./adaptadorusb/1.jpg`)}
-                            alt="Adaptador USB"
+                            src={laptopImages(`./tipocadapter/1.jpg`)}
+                            alt="Adaptador Tipo C - USB"
                         />
                         <button>Ver</button>
                     </li>
