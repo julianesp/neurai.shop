@@ -1,30 +1,21 @@
 import React from 'react';
 import '@styles/AccesoriosCelular.scss';
-import '@styles/Accesorios.scss'
 import { NavLink } from 'react-router-dom';
 
 const cellphoneImages = require.context("@pictures/celulares/", true);
 
 const AccesoriosCelular = () => {
-
     return (
         <div className='celulares'>
             <h1>Accesorios para celulares</h1>
 
             <section className='accesorios'>
                 <section className="accesorios-tipo">
-                    <div className="visit">
-                        <h2>Celulares</h2>
-                        <NavLink to='/accesoriosCelulares'>
-                            <button>Ver más</button>
-                        </NavLink>
-                    </div>
 
                     <ul className="contenedor">
                         <li className="caja">
                             <h3>Brazalete</h3>
-                            <img
-                                src={cellphoneImages(`./brazalete/1.png`)}
+                            <img src={cellphoneImages(`./brazalete/1.png`)}
                                 alt="Brazalete celulares"
                             />
                             <NavLink to='/pageAcce'>

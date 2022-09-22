@@ -2,9 +2,6 @@
 @import '@styles/mixins';
 
 .accesorios {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
 
   & .accesorios-tipo {
     margin-left: 100px;
@@ -13,6 +10,8 @@
 
     & .visit {      
       @include title;
+
+      margin-bottom: 15px;
       
       & img {
 
@@ -29,17 +28,18 @@
     }
     
     & .contenedor {
-      // display: flex;
+      position: relative;
 
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       
       overflow-x: scroll;
   
       @include barra;
   
       padding: 0;
-      position: relative;
+      margin: 0;
+      
       transition: 0.5s;
   
       & .caja {
@@ -94,7 +94,7 @@
 @media screen and (min-width: 320px) and(max-width: 480px) {
   .accesorios {
     & .accesorios-tipo {
-      margin: 0 10px 20px;
+      margin: 0 20px 20px;
       // border: unset;
   
       & .visit {
@@ -165,10 +165,17 @@
 @media screen and (min-width: 481px) and (max-width: 767px) {
   .accesorios {    
     & .accesorios-tipo {
-      margin: 0 10px;
-      & .visit {
-        
-      }
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .accesorios {    
+    & .accesorios-tipo {
+      margin-left: 50px;
+      margin-right: 50px;
     }
   }
 }
