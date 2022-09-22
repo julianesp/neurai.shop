@@ -31,6 +31,7 @@ const Accesorios = () => {
                 </ul>
 
             </section>
+
             <section className="accesorios-tipo">
                 <div className="visit" id="img2">
                     <h2>Celulares</h2>
@@ -42,10 +43,7 @@ const Accesorios = () => {
                 <ul className="contenedor">
                     <li className="caja">
                         <h3>Brazalete</h3>
-                        <img
-                            src={cellphoneImages(`./brazalete/1.png`)}
-                            alt="Brazalete celulares"
-                        />
+                        <img src={cellphoneImages(`./brazalete/1.png`)} alt="Brazalete celulares" />
                         <NavLink to='/pageAcce'>
                             <button>Ver</button>
                         </NavLink>

@@ -11,6 +11,7 @@ import Menu from '../containers/Menu'
 import PageAccesorio from '../components/PageAccesorio'
 import '../js/carrusel'
 import AccesoriosCelular from '@containers/AccesoriosCelular'
+import Productos from '../components/Productos'
 // import Accesorios from '@containers/Accesorios'
 
 const App = () => {
@@ -22,10 +23,9 @@ const App = () => {
                     <Route exact path='/' element={<Home />} />
                     <Route exact path='/products' element={<Accesorios />} />
                     <Route exact path='/profile' element={<Profile />} />
-
                     <Route exact path='/pageAcce' element={<PageAccesorio />} />
-
-                    <Route exact path='/accesoriosCelulares' element={<AccesoriosCelular />} />
+                    {/* <Route exact path='/accesoriosCelulares' element={<AccesoriosCelular />} /> */}
+                    <Route exact path='/accesoriosCelulares' element={<Productos />} />
 
                     <Route path='*' element={<NotFound />} />
                 </Routes>

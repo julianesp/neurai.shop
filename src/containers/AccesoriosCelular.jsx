@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '@styles/AccesoriosCelular.scss';
 import { NavLink } from 'react-router-dom';
 
 const cellphoneImages = require.context("@pictures/celulares/", true);
 
-const AccesoriosCelular = () => {
+const AccesoriosCelular = ( product ) => {
     return (
         <div className='celulares'>
             <h1>Accesorios para celulares</h1>
