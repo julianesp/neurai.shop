@@ -1,7 +1,7 @@
 import React from 'react';
 import '@styles/AccesoriosLaptop.scss'
 
-const laptopImages = require.context("@pictures/laptops", true);
+const ellas = require.context("@pictures/ellas", true);
 
 const AccesoriosEllas = () => {
     return (
@@ -13,10 +13,10 @@ const AccesoriosEllas = () => {
                     <ul className="contenedor">
 
                         <li className="caja">
-                            <h3>Adaptador USB</h3>
+                            <h3>Brochas maquillaje</h3>
                             <img
-                                src={laptopImages(`./adaptadorusb/1.jpg`)}
-                                alt="Adaptador USB"
+                                src={ellas(`./brochas/1.jpg`)}
+                                alt="Brochas maquillaje"
                             />
                             <button>Ver</button>
                         </li>

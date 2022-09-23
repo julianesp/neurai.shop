@@ -5,7 +5,8 @@ import { NavLink } from "react-router-dom";
 //acceso directo a imagenes
 const cellphoneImages = require.context("@pictures/celulares/", true);
 const laptopImages = require.context("@pictures/laptops/", true);
-const librosNewImages = require.context("@pictures/books/", true);
+const librosNew = require.context("@pictures/books/nuevos/", true);
+const librosUsados = require.context("@pictures/books/usados/", true);
 const salud = require.context("@pictures/salud/", true);
 const ellas = require.context("@pictures/ellas/", true);
 
@@ -138,27 +139,27 @@ const Accesorios = () => {
                 <ul className="contenedor">
                     <li className="caja">
                         <h3>El empresario</h3>
-                        <img src={librosNewImages(`./elon.png`)} alt="El empresario" />
+                        <img src={librosNew(`./elon.jpg`)} alt="El empresario" />
                         <button>Ver</button>
                     </li>
                     <li className="caja">
-                        <h3>El empresario</h3>
-                        <img src={librosNewImages(`./elon.png`)} alt="El empresario" />
+                        <h3>Ama y no sufras</h3>
+                        <img src={librosNew(`./ama.jpg`)} alt="Ama y no sufras" />
                         <button>Ver</button>
                     </li>
                     <li className="caja">
-                        <h3>El empresario</h3>
-                        <img src={librosNewImages(`./elon.png`)} alt="El empresario" />
+                        <h3>Enamórate de ti</h3>
+                        <img src={librosNew(`./enamorate.png`)} alt="Enamórate de ti" />
                         <button>Ver</button>
                     </li>
                     <li className="caja">
-                        <h3>El empresario</h3>
-                        <img src={librosNewImages(`./elon.png`)} alt="El empresario" />
+                        <h3>La Iliada</h3>
+                        <img src={librosNew(`./iliada.jpg`)} alt="La Iliada" />
                         <button>Ver</button>
                     </li>
                     <li className="caja">
-                        <h3>El empresario</h3>
-                        <img src={librosNewImages(`./elon.png`)} alt="El empresario" />
+                        <h3>Una vida con propósito</h3>
+                        <img src={librosNew(`./proposito.jpg`)} alt="Una vida con propósito" />
                         <button>Ver</button>
                     </li>
                 </ul>
@@ -172,28 +173,28 @@ const Accesorios = () => {
 
                 <ul className="contenedor">
                     <li className="caja">
-                        <h3>El empresario</h3>
-                        <img src={librosNewImages(`./elon.png`)} alt="El empresario" />
+                        <h3>Álgebra intermedia</h3>
+                        <img src={librosUsados(`./algebra1.png`)} alt="Álgebra intermedia" />
                         <button>Ver</button>
                     </li>
                     <li className="caja">
-                        <h3>El empresario</h3>
-                        <img src={librosNewImages(`./elon.png`)} alt="El empresario" />
+                        <h3>Fundamentos Circuitos</h3>
+                        <img src={librosUsados(`./circuitos.png`)} alt="Fundamentos Circuitos" />
                         <button>Ver</button>
                     </li>
                     <li className="caja">
-                        <h3>El empresario</h3>
-                        <img src={librosNewImages(`./elon.png`)} alt="El empresario" />
+                        <h3>Java 9na edición</h3>
+                        <img src={librosUsados(`./java_1.png`)} alt="Java 9na edición" />
                         <button>Ver</button>
                     </li>
                     <li className="caja">
-                        <h3>El empresario</h3>
-                        <img src={librosNewImages(`./elon.png`)} alt="El empresario" />
+                        <h3>Programación en Java</h3>
+                        <img src={librosUsados(`./java1.png`)} alt="Programación en Java" />
                         <button>Ver</button>
                     </li>
                     <li className="caja">
-                        <h3>El empresario</h3>
-                        <img src={librosNewImages(`./elon.png`)} alt="El empresario" />
+                        <h3>Java Orientado a objetos</h3>
+                        <img src={librosUsados(`./poo_1.png`)} alt="Java Orientado a objetos" />
                         <button>Ver</button>
                     </li>
                 </ul>
