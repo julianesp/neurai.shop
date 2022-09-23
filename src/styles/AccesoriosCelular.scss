@@ -16,7 +16,13 @@
         }
 
         & .accesorios {
-            // display: flex;
+            & .accesorios-tipo {
+                margin: 0 5px;
+                & .contenedor {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
         }
     }
 }
