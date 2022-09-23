@@ -21,6 +21,17 @@
                 & .contenedor {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
+                    justify-items: center;
+
+                    & .caja {
+                        width: 160px;
+                        margin: 15px 0;
+
+                        & img {
+                            width: 120px;
+                            min-width: 100px;
+                        }
+                    }
                 }
             }
         }
