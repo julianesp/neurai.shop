@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 const cellphoneImages = require.context("@pictures/celulares/", true);
 
-const AccesoriosCelular = ( product ) => {
+const AccesoriosCelular = () => {
     return (
         <div className='celulares'>
             <h1>Accesorios para celulares</h1>

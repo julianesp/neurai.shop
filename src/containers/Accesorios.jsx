@@ -83,7 +83,9 @@ const Accesorios = () => {
             <section className="accesorios-tipo">
                 <div className="visit" id="img3">
                     <h2>Computadores</h2>
-                    <button>Ver más</button>
+                    <NavLink to='/accesoriosLaptops'>
+                        <button>Ver más</button>
+                    </NavLink>
                 </div>
 
                 <ul className="contenedor">

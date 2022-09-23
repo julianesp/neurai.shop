@@ -10,9 +10,8 @@ import Footer from '../containers/Footer'
 import Menu from '../containers/Menu'
 import PageAccesorio from '../components/PageAccesorio'
 import '../js/carrusel'
-import AccesoriosCelular from '@containers/AccesoriosCelular'
-import Productos from '../components/Productos'
-// import Accesorios from '@containers/Accesorios'
+import ProductosCelulares from '../components/ProductosCelulares'
+import ProductosLaptop from '../components/ProductosLaptop'
 
 const App = () => {
     return (
@@ -25,7 +24,8 @@ const App = () => {
                     <Route exact path='/profile' element={<Profile />} />
                     <Route exact path='/pageAcce' element={<PageAccesorio />} />
                     {/* <Route exact path='/accesoriosCelulares' element={<AccesoriosCelular />} /> */}
-                    <Route exact path='/accesoriosCelulares' element={<Productos />} />
+                    <Route exact path='/accesoriosCelulares' element={<ProductosCelulares />} />
+                    <Route exact path='/accesoriosLaptops' element={<ProductosLaptop />} />
 
                     <Route path='*' element={<NotFound />} />
                 </Routes>

@@ -1,16 +1,15 @@
 import React, { useState } from "react";
-// import Producto from '@components/Producto'
-import Producto from '@containers/AccesoriosCelular'
+import AccesoriosLaptop from '@containers/AccesoriosLaptop'
 
-const Productos = () => {
+const ProductosLaptop = () => {
 
     const [productos, setProductos] = useState([
         {
             id: 1,
             nombre: 'Brazalete',
-            img: 'https://cdn.pixabay.com/photo/2022/08/14/21/47/snake-7386684_960_720.jpg',
+            img: '@pictures/celulares/brazalete/2.png',
             precio: 14000,
-            descripcion: 'Evita golpes'
+            descripcion: 'Evita golpes a tu celular'
         },
         // {
         //     id: 2,
@@ -38,10 +37,10 @@ const Productos = () => {
     return (
         <div className="products">
             {productos.map( (producto) => {
-                return <Producto key={producto.id} nombre={producto.nombre} img={producto.img} descripcion={producto.descripcion} />;
+                return <AccesoriosLaptop key={producto.id} nombre={producto.nombre} img={producto.img} descripcion={producto.descripcion} />;                
             })}
         </div>
     )
 }
 
-export default Productos;
+export default ProductosLaptop;

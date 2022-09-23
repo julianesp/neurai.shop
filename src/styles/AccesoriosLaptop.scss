@@ -1,0 +1,22 @@
+.laptops {
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+        text-decoration: underline;
+        
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 320px) and(max-width: 480px) {
+    .celulares {
+        & h1 {
+            font-size: 1.5rem;
+        }
+
+        & .accesorios {
+            // display: flex;
+        }
+    }
+}
