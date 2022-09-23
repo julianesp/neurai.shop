@@ -21,6 +21,16 @@
                 & .contenedor {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
+
+                    & .caja {
+                        width: 160px;
+                        margin: 0;
+
+                        & img {
+                            width: 120px;
+                            min-width: 100px;
+                        }
+                    }
                 }
             }
         }
