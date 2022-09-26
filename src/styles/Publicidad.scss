@@ -33,7 +33,12 @@
       height: 320px;
       // background-color: $color-shadow;
 
-      
+      &:nth-child(1) {
+        background-image: url('../assets/img/anuncios/frontend.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: center;
+      }
     }
   }
 

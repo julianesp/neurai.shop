@@ -6,11 +6,11 @@ const Publicidad = () => {
     return (
         <section className="carrousel">            
             <div className="grande">
-                <img src='../assets/img/developer.jpg' alt="imagen1" className='img'/>
-                <img src='../assets/img/developer.jpg' alt="imagen2" className='img'/>
-                <img src='../assets/img/developer.jpg' alt="imagen3" className='img'/>
-                <img src='../assets/img/developer.jpg' alt="imagen4" className='img'/>
-                <img src='../assets/img/developer.jpg' alt="imagen5" className='img'/>
+                <img className='img'/>
+                <img src='../assets/img/developer.jpg' className='img'/>
+                <img src='../assets/img/developer.jpg' className='img'/>
+                <img src='../assets/img/developer.jpg' className='img'/>
+                <img src='../assets/img/developer.jpg' className='img'/>
             </div>
 
             <ul className="puntos">
