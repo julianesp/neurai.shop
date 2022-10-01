@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '@styles/AccesoriosLaptop.scss'
 
-const ellas = require.context("@pictures/ellas", true);
+const ellas = require.context("@pictures/ellas/", true);
 
 const AccesoriosEllas = () => {
     return (
-        <div className="ellas">
+        <div className="celulares">
             <h1>Accesorios para mujeres</h1>
 
             <section className="accesorios">

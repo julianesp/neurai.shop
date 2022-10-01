@@ -17,7 +17,9 @@ const Accesorios = () => {
             <section className="accesorios-tipo">
                 <div className="visit" id="img1">
                     <h2>Ellas</h2>                
-                    <button>Ver más</button>                    
+                    <NavLink to='/ellas'>
+                        <button>Ver más</button>
+                    </NavLink>
                 </div>
                 
                 <ul className="contenedor">
@@ -133,7 +135,9 @@ const Accesorios = () => {
             <section className="accesorios-tipo">
                 <div className="visit" id="img4">
                     <h2>Libros nuevos</h2>
-                    <button>Ver más</button>
+                    <NavLink to='/newBooks'>
+                        <button>Ver más</button>
+                    </NavLink>
                 </div>
 
                 <ul className="contenedor">
@@ -168,7 +172,9 @@ const Accesorios = () => {
             <section className="accesorios-tipo">
                 <div className="visit" id="img5">
                     <h2>Libros usados</h2>
-                    <button>Ver más</button>
+                    <NavLink to='/usadosBooks'>
+                        <button>Ver más</button>
+                    </NavLink>
                 </div>
 
                 <ul className="contenedor">
@@ -203,7 +209,9 @@ const Accesorios = () => {
             <section className="accesorios-tipo">
                 <div className="visit" id="img6">
                     <h2>Salud</h2>
-                    <button>Ver más</button>
+                    <NavLink to='/salud'>
+                        <button>Ver más</button>
+                    </NavLink>
                 </div>
 
                 <ul className="contenedor">
