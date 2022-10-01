@@ -4,12 +4,15 @@
 
 .container {
     position: relative;
-
-    height: 320px;
-
-    margin: 0 100px 50px 100px;
-
+    
+    height: 300px;
+    
+    // @extend .flex-center;
+    
     overflow-x: scroll;
+    overflow-y: hidden;
+
+    background-color: $color-shadow;
 
     @include barra;
 
@@ -39,17 +42,62 @@
             margin: 0;
             padding-left: 10px;
 
+            
             & .tipos {
+                border: 2px solid $color-dark;
+                position: relative;
                 background-color: $color-claro;
                 @extend .flex-center;
 
                 width: 300px;
-                height: 220px;
+                height: 200px;
 
                 margin: 0 10px 0 0;
 
-                border: 1px solid #000;
                 border-radius: 10px;
+                
+                transition: all .2s ease-in;
+                
+                &:hover {                    
+                    border: 2px solid $color-claro;
+                }
+
+                &:hover > p{
+                    background-color: rgba(#3DB0CF, .8);
+                    opacity: 1;
+                }                
+                
+                & p {
+                    width: 100%;
+                    height: 100%;
+                    transition: all .3s ease-in;
+                    position: absolute;
+                    top: 0;
+                    opacity: 0;
+
+                    margin: 0;
+
+                    border-radius: 10px;
+
+                    @extend .flex-center;
+
+                    color: $color-claro;
+                    font-size: 1.9rem;
+                    font-weight: bolder;
+                    text-align: center;
+                }
+                & img {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                // enfocando el último elemento 
+                &:last-child {
+                    margin-right: 80px;
+                }
+                &:nth-child(1) {
+                    margin-left: 80px;
+                }
             }
         }
 

@@ -7,5 +7,4 @@ y también dar a conocer los demás negocios que hay en los diferentes pueblos.
 
 - HTML
 - SCSS
-- JavaScript
 - React

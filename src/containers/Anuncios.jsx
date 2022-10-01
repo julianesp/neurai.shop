@@ -1,33 +1,36 @@
 import React from 'react';
 import '@styles/Anuncios.scss';
-// import '@img/'
 
-const Anuncios = () => {
+const tiendas = require.context("@img/", true);
+
+const Anuncios = () => {    
     return (        
         <section className='container'>
-            <div className="title">
-                <h3>Tiendas del pueblo</h3>
-            </div>
-            
             <div className="stores">
                 <ul className='store-listado'>
                     <li className='tipos'>
-                        <img src='../assets/img/shop.png' alt="" /> 1
+                        <p>Pide tu lugar para mostrar tu tienda</p>
+                        <img src={tiendas(`./store.png`)} alt="" />
                     </li>
                     <li className='tipos'>
-                        <img src='../assets/img/shop.png' alt="" /> 1
+                        <p>Pide tu lugar para mostrar tu tienda</p>
+                        <img src={tiendas(`./store.png`)} alt="" /> 
                     </li>
                     <li className='tipos'>
-                        <img src='../assets/img/shop.png' alt="" /> 1
+                        <p>Pide tu lugar para mostrar tu tienda</p>
+                        <img src={tiendas(`./store.png`)} alt="" /> 
                     </li>
                     <li className='tipos'>
-                        <img src='../assets/img/shop.png' alt="" /> 1
+                        <p>Pide tu lugar para mostrar tu tienda</p>
+                        <img src={tiendas(`./store.png`)} alt="" /> 
                     </li>
                     <li className='tipos'>
-                        <img src='../assets/img/shop.png' alt="" /> 1
+                        <p>Pide tu lugar para mostrar tu tienda</p>
+                        <img src={tiendas(`./store.png`)} alt="" /> 
                     </li>
                     <li className='tipos'>
-                        <img src='../assets/img/shop.png' alt="" /> 1
+                        <p>Pide tu lugar para mostrar tu tienda</p>
+                        <img src={tiendas(`./store.png`)} alt="" /> 
                     </li>
                 </ul>
             </div>
