@@ -16,25 +16,15 @@ const Publicidad = () => {
                 <img className='img'/>
             </div>
 
-            {/* botones control */}
-            <ul className='control'>
-                    <img src={img(`./regresa.png`)} className='left' alt="" />
-                    <img src={img(`./adelante.png`)} className='right' alt="" />
-                {/* <li className='boton left'>
+            <div className="botones">
+                <div className="boton left">
                     <img src={img(`./regresa.png`)} alt="" />
-                </li>
-                <li className='boton right'>
-                    <img src={img(`./adelante.png`)} alt="" />
-                </li> */}
-            </ul>
+                </div>
 
-            {/* <ul className="puntos">
-                <li className="punto activo"></li>
-                <li className="punto activo"></li>
-                <li className="punto activo"></li>
-                <li className="punto activo"></li>
-                <li className="punto activo"></li>
-            </ul> */}
+                <div className="boton right">
+                    <img src={img(`./adelante.png`)} alt="" />
+                </div>
+            </div>
         </section>
     );
 };
