@@ -16,14 +16,11 @@ const Publicidad = () => {
                 <img className='img'/>
             </div>
 
-            <div className="botones">
-                <div className="boton left">
-                    <img src={img(`./regresa.png`)} alt="" />
-                </div>
-
-                <div className="boton right">
-                    <img src={img(`./adelante.png`)} alt="" />
-                </div>
+            <div className="boton left">
+                <img src={img(`./regresa.png`)} alt="" />
+            </div>
+            <div className="boton right">
+                <img src={img(`./adelante.png`)} alt="" />
             </div>
         </section>
     );

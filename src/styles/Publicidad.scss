@@ -61,30 +61,24 @@
     }
   }
 
-  & .botones {
+  & .boton {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-
-    & .boton {
-      & .left {
-        left: 20px;
-      }
-      & .right {
-        right: 20px;
-      }
-      & img {
-  
-        list-style: none;      
-        width: 40px;
-        height: 40px;
-        
-      }
-
+    
+    & img {
+      
+      list-style: none;      
+      width: 40px;
+      height: 40px;
+      
     }
-
-
-
+  }
+  & .left {
+    left: 20px;
+  }
+  & .right {
+    right: 20px;
   }
   
   & .puntos {
