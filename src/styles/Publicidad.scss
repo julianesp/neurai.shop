@@ -1,50 +1,48 @@
 @import "@styles/colors";
 @import "@styles/heredar";
 
-.carrousel {
+.container-slider {
   position: relative;
   height: 350px;
-  width: 100%;
-  // max-width: 120em;
+  width: 90%;
+  max-width: 900px;
 
-  margin-top: 10px;
-  margin-bottom: 50px;
+  // margin-top: 10px;
+  // margin-bottom: 50px;
 
-  // border: 1px solid #000;
+  margin: auto;
 
-  & .grande {
-    width: 500%;
-    
+  overflow-x: scroll;
 
+  & .slider {
     display: flex;
-    // flex-flow: row nowrap;
-    // justify-content: flex-start;
-    align-items: center;
+    width: 400%;
+    height: 350px;
+    
+    & .slider__section {
+      width: 100%;
 
-    //animations
-    transition: all .5s ease-in;
-    transform: translateX(0%);
+      & .slider__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
 
-    animation: cambio 20s infinite alternate linear;
-
-
-    & .img {
-      width: calc(500% / 5);
-      height: 320px;
-
-      &:nth-child(1) {
-        background-image: url('../assets/img/anuncios/frontend.jpg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position-x: center;
-      }
-      &:nth-child(2) {
-        background-image: url('../assets/img/anuncios/formateo.jpg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position-x: center;
+        &:nth-child(1) {
+          background-image: url('../assets/img/anuncios/frontend.jpg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position-x: center;
+        }
+        &:nth-child(2) {
+          background-image: url('../assets/img/anuncios/formateo.jpg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position-x: center;
+        }
       }
     }
+
 
     @keyframes cambio {
       0% {margin-left: 0;}
@@ -65,6 +63,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
     
     & img {
       
