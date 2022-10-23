@@ -1,0 +1,1 @@
+var slider=document.querySelector("#slider"),sliderSection=document.querySelectorAll(".slider__section"),sliderSectionLast=sliderSection[sliderSection.length-1],btnLeft=document.querySelector("#btn-left"),btnRight=document.querySelector("#btn-right");
