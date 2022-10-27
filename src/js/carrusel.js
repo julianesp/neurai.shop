@@ -1,12 +1,43 @@
-const slider = document.querySelector("#slider")
+var imagenes = ['../assets/img/store.png', 
+'../assets/img/developer.jpg'];
 
-// llamando a todas las variables 
-let sliderSection = document.querySelectorAll(".slider__section")
+var contador = 0;
 
-// getting to the ultimo section 
-let sliderSectionLast = sliderSection[sliderSection.length - 1]
+function carrusel(contenedor) {
+    contenedor.addEventListener('click', e => {
+        let atras = contenedor.querySelector('.atras')
+        let adelante = contenedor.querySelector('.adelante')
+        let imagen = contenedor.querySelector('.imagend')
+        let tgt = e.target
 
-const btnLeft = document.querySelector("#btn-left")
-const btnRight = document.querySelector("#btn-right")
+        if(atras) {
+            alert('clic')
+        }
 
-// slider.insertAdjacentHTML('afterbegin', sliderSectionLast)
+        if (tgt == atras) {
+            if (contador > 0) {
+                imagen.src = imagenes[contador - 1]
+                contador--
+            } else {
+                imagen.src = imagenes[imagenes.length - 1]
+                cont = imagenes.length - 1
+            }
+
+        } else if (tgt == adelante) {
+            if (contador < 0) {
+                imagen.src = imagenes[cont + 1]
+                cont++
+            } else {
+                imagen.src = imagenes[0]
+                cont = 0
+            }
+        }
+    })
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    let contenedor = document.querySelector('.botones')
+
+    carrusel(contenedor)
+})
+

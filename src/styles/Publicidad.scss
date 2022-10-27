@@ -1,11 +1,13 @@
 @import "@styles/colors";
 @import "@styles/heredar";
 
-.container-slider {
+.contenedor {
   position: relative;
   height: 350px;
   width: 90%;
   max-width: 900px;
+
+  border: 1px solid #000;
 
   // margin-top: 10px;
   // margin-bottom: 50px;
@@ -14,101 +16,15 @@
 
   overflow-x: scroll;
 
-  & .slider {
-    display: flex;
-    width: 400%;
-    height: 350px;
-    
-    & .slider__section {
-      width: 100%;
 
-      & .slider__img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+  // nuevo diseño 
+  & .botones {   
 
-        &:nth-child(1) {
-          background-image: url('../assets/img/anuncios/frontend.jpg');
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position-x: center;
-        }
-        &:nth-child(2) {
-          background-image: url('../assets/img/anuncios/formateo.jpg');
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position-x: center;
-        }
-      }
-    }
-
-
-    @keyframes cambio {
-      0% {margin-left: 0;}
-      20% {margin-left: 0;}
-
-      25% {margin-left: -100%;}
-      45% {margin-left: -100%;}
-
-      50% {margin-left: -200%;}
-      70% {margin-left: -200%;}
-
-      75% {margin-left: -300%;}
-      100% {margin-left: -300%;}
-    }
-  }
-
-  & .boton {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    
     & img {
-      
-      list-style: none;      
       width: 40px;
-      height: 40px;
-      
     }
   }
-  & .left {
-    left: 20px;
-  }
-  & .right {
-    right: 20px;
-  }
-  
-  & .puntos {
-    width: auto;
-    // background-color: $color-shadow;
-    padding: .5em;
-    
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    
-    list-style: none;
-    border-radius: 10px;
-  }
-  
-  & .punto {
-    width: 2em;
-    height: 2em;
-    margin-right: 20px;
-    
-    border-radius: 10px;
-    border: 2px solid $color-shadow;
-    background-color: $color-claro;
 
-    cursor: pointer;
-
-    &.activo {
-      background-color: $color-botones;
-    }
-  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
