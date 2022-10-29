@@ -3,28 +3,11 @@
 
 .contenedor {
   position: relative;
-  height: 350px;
-  width: 90%;
-  max-width: 900px;
 
   border: 1px solid #000;
 
-  // margin-top: 10px;
-  // margin-bottom: 50px;
-
-  margin: auto;
-
-  overflow-x: scroll;
-
-
-  // nuevo diseño 
-  & .botones {   
-
-    & img {
-      width: 40px;
-    }
-  }
-
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {

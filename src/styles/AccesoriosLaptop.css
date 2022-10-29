@@ -1,0 +1,29 @@
+.laptops h1 {
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .laptops h1 {
+    font-size: 1.5rem;
+  }
+  .laptops .accesorios .accesorios-tipo {
+    margin: 0 5px;
+  }
+  .laptops .accesorios .accesorios-tipo .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .laptops .accesorios .accesorios-tipo .contenedor .caja {
+    width: 160px;
+    margin: 15px 0;
+  }
+  .laptops .accesorios .accesorios-tipo .contenedor .caja img {
+    width: 120px;
+    min-width: 100px;
+  }
+}/*# sourceMappingURL=AccesoriosLaptop.css.map */
