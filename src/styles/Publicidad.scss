@@ -13,8 +13,9 @@
             height: inherit;
 
             & img {
+                background-position-y: 0 0 50px 0;
                 height: 367px;
-                object-fit: cover;            
+                // object-fit: cover;   
             }
         }
     }

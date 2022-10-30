@@ -8,11 +8,8 @@ import { NavLink } from "react-router-dom";
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" />
 //calling file js to menu
 import '../js/menu';
-{/* <script src="../js/menu.js" type='module'></script> */}
 
 const Header = () => {
-    
-
     return (
         <div className='header'>
             <div className="logo">
