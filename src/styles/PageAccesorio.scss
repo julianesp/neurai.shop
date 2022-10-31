@@ -1,4 +1,35 @@
-@import '@styles/heredar';
+// @import '@styles/heredar';
+.carousel {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 450px;
+    
+    & .carousel-inner {
+        & .carousel-item {
+            & img {
+                width: 100px;
+                border-radius: 50px;
+                border: 1px solid #baba;
+            }
+        }
+    }
+
+    & .carousel-control-next {
+        & .carousel-control-next-icon {
+            background-color: #000;
+        }
+    }
+    
+    & .carousel-control-prev {
+        & .carousel-control-prev-icon {
+            background-color: #000;
+        }        
+    }
+}
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 .container-accesorios {
     display: grid;
@@ -18,19 +49,22 @@
         grid-area: title;
         border: 1px solid #000;
         border-radius: 10px;
-        @extend .flex-center;
+        // @extend .flex-center;
     }
     & .imgs {
         grid-area: imagen;
         border: 1px solid #000;
         border-radius: 10px;
-        @extend .flex-center;
+        // @extend .flex-center;
     }
     & .send {
         grid-area: envio;        
         border: 1px solid #000;
         border-radius: 10px;
         padding: 0 30px;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
         & h3 {
             // text-align: center;

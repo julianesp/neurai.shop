@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-// import Producto from '@components/Producto'
 import AccesoriosCelular from '@containers/AccesoriosCelular'
-import AccesoriosLaptop from '@containers/AccesoriosLaptop'
 
 const ProductosCelulares = () => {
 
