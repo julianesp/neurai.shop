@@ -28,29 +28,31 @@ const PageAccesorio = () => {
                 <h1>title</h1>
             </div>
 
-            {/* <div className='imgs'> */}
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src={anuncios(`./formateo.jpg`)} class="d-block w-100" alt="..."/>
-                        </div>
-                        <div class="carousel-item">
-                            <img src={anuncios(`./frontend.jpg`)} class="d-block w-100" alt="..."/>
-                        </div>
-                        <div class="carousel-item">
-                            <img src={anuncios(`./formateo.jpg`)} class="d-block w-100" alt="..."/>
-                        </div>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src={anuncios(`./formateo.jpg`)} class="d-block w-100" alt="..." />
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="carousel-item">
+                        <img src={anuncios(`./frontend.jpg`)} class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src={anuncios(`./formateo.jpg`)} class="d-block w-100" alt="..." />
+                    </div>
                 </div>
-            {/* </div> */}
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div className="features">
+                <p>caracteristicas</p>
+            </div>
 
             <div className='send'>
                 <div className="price">
@@ -75,6 +77,10 @@ const PageAccesorio = () => {
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ea temporibus dicta quasi praesentium nemo cupiditate eius incidunt aspernatur, ratione quia! Reprehenderit voluptatum vitae eveniet dolorum perspiciatis dignissimos facilis laudantium?
                 </p>
+            </div>
+
+            <div className="record">
+                <p>video</p>
             </div>
         </section>
     );
