@@ -3,6 +3,7 @@ import '@styles/Publicidad.scss'
 
 
 const anuncios = require.context("@img/presentacion/", true);
+const arrow = require.context("@img/botones/", true);
 
 const Publicidad = () => {
 
@@ -10,47 +11,45 @@ const Publicidad = () => {
         <div className="contenedorItems">
             <div className="itemCarrusel" id='itemCarrusel-1'>
                 <div className="imgsPresentation" id='tarjetaCarrusel-1'>
-                    {/* A */}
                     <img src={anuncios(`./park.jpg`)} alt="" />
                 </div>
 
                 <div className="flechas">                    
                     <a href="#itemCarrusel-3">
-                        <i>I</i>
+                        <img src={arrow(`./regresa.png`)} alt="" />
                     </a>
                     <a href="#itemCarrusel-2">
-                        <i>D</i>
+                        <img src={arrow(`./adelante.png`)} alt="" />
                     </a>
                 </div>
             </div>            
 
             <div className="itemCarrusel" id='itemCarrusel-2'>
                 <div className="imgsPresentation" id='tarjetaCarrusel-2'>
-                    B
-                    {/* <img src={anuncios(`./trabajo_1.png`)} alt="" /> */}
+                    <img src={anuncios(`./anuncio.jpg`)} alt="" />
                 </div>
 
                 <div className="flechas">                    
                     <a href="#itemCarrusel-1">
-                        <i>I</i>
+                        <img src={arrow(`./regresa.png`)} alt="" />
                     </a>
                     <a href="#itemCarrusel-3">
-                        <i>D</i>
+                        <img src={arrow(`./adelante.png`)} alt="" />
                     </a>
                 </div>
             </div>            
 
             <div className="itemCarrusel" id='itemCarrusel-3'>
                 <div className="imgsPresentation" id='tarjetaCarrusel-3'>
-                    C
+                    <img src={anuncios(`./formateo.jpg`)} alt="" />
                 </div>
 
                 <div className="flechas">                    
                     <a href="#itemCarrusel-2">
-                        <i>I</i>
+                        <img src={arrow(`./regresa.png`)} alt="" />
                     </a>
                     <a href="#itemCarrusel-1">
-                        <i>D</i>
+                        <img src={arrow(`./adelante.png`)} alt="" />
                     </a>
                 </div>
             </div>            
