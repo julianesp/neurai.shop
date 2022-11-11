@@ -4,6 +4,8 @@ import AccesoriosCelular from '@containers/AccesoriosCelular'
 const ProductosCelulares = () => {
 
     const [productos, setProductos] = useState([
+
+        // estos arreglos representan a todos los accesorios de la page Accesorios para celulares
         {
             id: 1,
             nombre: 'Brazalete',

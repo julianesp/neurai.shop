@@ -82,7 +82,15 @@ const PageAccesorio = () => {
             <div className="record">
                 <p>video</p>
             </div>
+
+            {/* <div className="products">
+                        {productos.map( (producto) => {
+                            return <AccesoriosCelular key={producto.id} nombre={producto.nombre} img={producto.img} descripcion={producto.descripcion} />               
+                        })}
+            </div> */}
         </section>
+
+
     );
 };
 
