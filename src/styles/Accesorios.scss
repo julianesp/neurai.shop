@@ -1,5 +1,5 @@
-@import '@styles/colors';
-@import '@styles/mixins';
+@import '../styles/colors';
+@import '../styles/mixins';
 
 .accesorios {
 
@@ -91,7 +91,7 @@
 
 }
 
-@media screen and (min-width: 320px) and(max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .accesorios {
     & .accesorios-tipo {
       margin: 0 20px 20px;

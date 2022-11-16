@@ -1,7 +1,6 @@
 import React from 'react';
-import '@styles/Anuncios.scss';
 
-const tiendas = require.context("@img/", true);
+const tiendas = require.context("../assets/img/", true);
 
 const Anuncios = () => {    
     return (        

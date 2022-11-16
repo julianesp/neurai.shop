@@ -1,9 +1,7 @@
 import React from 'react';
-import '@styles/Publicidad.scss'
 
-
-const anuncios = require.context("@img/presentacion/", true);
-const arrow = require.context("@img/botones/", true);
+const anuncios = require.context("../assets/img/presentacion/", true);
+const arrow = require.context("../assets/img/botones/", true);
 
 const Publicidad = () => {
 

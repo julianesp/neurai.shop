@@ -1,14 +1,25 @@
-import React, { useContext, useState } from "react";
-import "@styles/Accesorios.scss";
+import React from "react";
+// import "@styles/Accesorios.scss";
+import '../pages/index'
 import { NavLink } from "react-router-dom";
 
 //acceso directo a imagenes
-const cellphoneImages = require.context("@pictures/celulares/", true);
-const laptopImages = require.context("@pictures/laptops/", true);
-const librosNew = require.context("@pictures/books/nuevos/", true);
-const librosUsados = require.context("@pictures/books/usados/", true);
-const salud = require.context("@pictures/salud/", true);
-const ellas = require.context("@pictures/ellas/", true);
+// const cellphoneImages = require.context("@pictures/celulares/", true);
+const cellphoneImages = require.context("../assets/pictures/celulares", true);
+// const laptopImages = require.context("@pictures/laptops/", true);
+const laptopImages = require.context("../assets/pictures/laptops", true);
+
+// const librosNew = require.context("@pictures/books/nuevos/", true);
+const librosNew = require.context("../assets/pictures/books/nuevos", true);
+
+// const librosUsados = require.context("@pictures/books/usados/", true);
+const librosUsados = require.context("../assets/pictures/books/usados/", true);
+
+// const salud = require.context("@pictures/salud/", true);
+const salud = require.context("../assets/pictures/salud/", true);
+
+// const ellas = require.context("@pictures/ellas/", true);
+const ellas = require.context("../assets/pictures/ellas/", true);
 
 const Accesorios = () => {
 

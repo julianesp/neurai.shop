@@ -1,6 +1,6 @@
-@import "@styles/heredar";
-@import "@styles/colors";
-@import "@styles/mixins";
+@import "../styles/heredar";
+@import "../styles/colors";
+@import "../styles/mixins";
 
 .container {
     position: relative;
@@ -122,7 +122,7 @@
     }
 }
 
-@media screen and (min-width: 481px) and(max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
     .container {
         margin-left: 30px;
         margin-right: 30px;
