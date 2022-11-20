@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Brazalete para brazo",
+        "price": 14000,
+        "url": "../assets/pictures/celulares/brazalete/1.png",
+        "description": "Haz ejercicio acompañado de tu música preferida"
+    },
+    {
+        "id": 2,
+        "name": "Soporte móvil para celulares",
+        "price": 33000,
+        "url": "../assets/pictures/celulares/soportemovil/1.jpg",
+        "description": "Lleva tu celular donde quieras"
+    },
+    {
+        "id": 3,
+        "name": "USB iphone",
+        "price": 16000,
+        "url": "../assets/pictures/celulares/usbiphone/1.jpg",
+        "description": "USB para diferentes modelos de iPhone"
+    }
+]
