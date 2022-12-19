@@ -6,12 +6,17 @@ import { NavLink } from "react-router-dom";
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" />
 //calling file js to menu
 import '../js/menu';
+import Image from 'next/image'
 
 const Header = () => {
     return (
         <div className='header'>
             <div className="logo">
-                <img src={logo} />
+                <Image 
+                    src={logo}
+                    alt="Logo de mi tienda"
+                />
+                {/* <img src={logo} /> */}
                 <p>Neurai</p>
             </div>
             <nav className='header__contenedor hamburger hamburger--elastic is-active" type="button'>

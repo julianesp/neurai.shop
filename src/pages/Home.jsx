@@ -1,17 +1,12 @@
 import React from 'react';
-import Acc from '../containers/Accesorios';
-import Anuncios from '../containers/Anuncios';
-import Publicidad from '../containers/Publicidad';
-import AccesoriosCelulares from '../containers/AccesoriosCelular'
+import NavBar from '../components/NavBar/NavBar';
+// import Accesorios from '../components/Accesorios/Accesorios';
 
 const Home = () => {
     return (
         <div className='main'>            
-            <Publicidad />
-            <Acc />
-            <Anuncios />
-            {/* <AccesoriosCelulares /> */}
-            
+            <NavBar />
+            {/* <Accesorios /> */}
         </div>
     );
 };
