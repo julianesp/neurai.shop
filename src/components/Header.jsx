@@ -1,8 +1,6 @@
-import React, {useState} from 'react';
-import Menu from '@containers/Menu'
+import React from 'react';
 import '@styles/Header.scss';
 import logo from '@img/cerebro.svg';
-import pages from '../js/pages'
 import { NavLink } from "react-router-dom";
 // llamando a libreria
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" />

@@ -22,7 +22,6 @@ const AccesoriosCelular = () => {
                                 <button>Ver</button>
                             </NavLink>
                         </li>
-                        
                     </ul>
                 </section>
             </section>
