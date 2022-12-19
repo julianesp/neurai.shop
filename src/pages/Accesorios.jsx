@@ -1,14 +1,14 @@
 import React, { useContext, useState } from "react";
-import "@styles/Accesorios.scss";
+import "../src/styles/Accesorios.scss";
 import { NavLink } from "react-router-dom";
 
 //acceso directo a imagenes
-const cellphoneImages = require.context("@pictures/celulares/", true);
-const laptopImages = require.context("@pictures/laptops/", true);
-const librosNew = require.context("@pictures/books/nuevos/", true);
-const librosUsados = require.context("@pictures/books/usados/", true);
-const salud = require.context("@pictures/salud/", true);
-const ellas = require.context("@pictures/ellas/", true);
+const cellphoneImages = require.context("../src/assets/pictures/celulares/", true);
+const laptopImages = require.context("../src/assets/pictures/laptops/", true);
+const librosNew = require.context("../src/assets/pictures/books/nuevos/", true);
+const librosUsados = require.context("../src/assets/pictures/books/usados/", true);
+const salud = require.context("../src/assets/pictures/salud/", true);
+const ellas = require.context("../src/assets/pictures/ellas/", true);
 
 const Accesorios = () => {
 
