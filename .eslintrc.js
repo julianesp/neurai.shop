@@ -7,8 +7,12 @@ module.exports = {
         es6: true,
     },
     extends: [
-        'eslint:recommended',
+        
         'next',
-        'next/core-web-vitals',
+        
+    ],
+    rules: [
+		"react/no-unescaped-entities": "off",
+    	"@next/next/no-page-custom-font": "off",
     ]
 }
