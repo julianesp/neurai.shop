@@ -6,7 +6,7 @@ const NavBar = () => {
     
         <nav>
             <menu>         
-                <Link href='/Home'>Inicio</Link>       
+                <Link href='/'>Inicio</Link>       
                 <Link href='/Profile'>Sobre mí</Link>                
             </menu>
         </nav>
