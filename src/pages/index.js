@@ -1,16 +1,18 @@
-import React from 'react';
-import NavBar from "../components/NavBar/NavBar";
-import Layout from '../components/Layout';
+import React from "react";
+import Layout from "../components/Layout";
+
+const app = document.querySelector('app')
+const root = ReactDOM.createRoot(app)
 
 const Index = () => {
-    return (
-        <Layout>
-            <div className='main'>
-                <h1>inicio</h1>
-            </div>
-        </Layout>
-    );
+  return (
+    <Layout>
+      <div>
+        
+          
+      </div>
+    </Layout>
+  );
+};
 
-}
-
-export default Index
+export default Index;

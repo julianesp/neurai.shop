@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Layout from '../components/Layout';
-import dev from '../assets/img/developer.jpg'
+import dev from '../assets/img/developer_2.jpg'
 import cirp  from '../assets/img/empresas/cirp.png'
 import awaspa  from '../assets/img/empresas/awaspa.png'
 
@@ -25,6 +25,10 @@ const Profile = () => {
                             Desde niño me ha gustado tocar guitarra, tambi&eacute;n me dedico a leer porque me gusta enterarme de
                             los hechos que han marcado la actualidad. <br />Espero sea de su agrado mi sitio 😉
                         </p>
+                    </section>
+
+                    <section className='study'>
+                        <h2>Mis logros</h2>
                     </section>
 
                 </section>
